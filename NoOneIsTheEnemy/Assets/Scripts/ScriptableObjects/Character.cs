@@ -37,9 +37,9 @@ public class Character : ScriptableObject
         DialogueManager.singleton.StartDialogue(this, dialogues[0]); // TEST: REPLACE WITH RELATIONSHIP PARSING CODE
     }
 
-    public void StartDialogue(int dIndex)
+    public void StartDialogue(int dIndex, int relChange)
     {
-        Debug.Log(dIndex);
+        relationship += relChange;
         DialogueManager.singleton.StartDialogue(this, dialogues[dIndex]);
     }
 }

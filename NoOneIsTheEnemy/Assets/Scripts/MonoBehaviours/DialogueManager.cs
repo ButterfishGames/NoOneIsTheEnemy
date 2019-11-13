@@ -16,8 +16,10 @@ public class DialogueManager : MonoBehaviour
     private Character currentCharacter;
     private Dialogue currentDialogue;
 
+    private bool primed;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if (singleton == null)
         {
@@ -34,6 +36,20 @@ public class DialogueManager : MonoBehaviour
 
         currentCharacter = null;
         currentDialogue = null;
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Submit") && EventSystem.current.currentSelectedGameObject == null)
+        {
+            primed = true;
+        }
+
+        if (Input.GetButtonUp("Submit") && EventSystem.current.currentSelectedGameObject == null && primed)
+        {
+            DisplayNextLine();
+            primed = false;
+        }
     }
 
     public void StartDialogue(Character character, Dialogue dialogue)
@@ -56,6 +72,8 @@ public class DialogueManager : MonoBehaviour
 
         currentCharacter = character;
         currentDialogue = dialogue;
+
+        GameObject.Find("DialogueBox").GetComponent<Animator>().SetInteger("state", 0);
 
         DisplayNextLine();
     }
@@ -93,16 +111,19 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("Dialogue over");
                 currentDialogue = null;
                 currentCharacter = null;
+                GameController.singleton.LoadScene(GameController.singleton.mapScene);
                 break;
 
             case DialogueType.branch:
+                GameObject.Find("DialogueBox").GetComponent<Animator>().SetInteger("state", 1);
                 GameObject branchPanel = GameObject.Find("BranchPanel");
                 for (int i = 0; i < currentDialogue.branches.Length; i++)
                 {
                     GameObject branchButton = Instantiate(branchButtonPrefab, branchPanel.transform);
                     branchButton.GetComponentInChildren<Text>().text = currentDialogue.branches[i];
                     int dIndex = currentDialogue.branchDialogues[i];
-                    branchButton.GetComponentInChildren<Button>().onClick.AddListener(() => currentCharacter.StartDialogue(dIndex));
+                    int relChange = currentDialogue.relationshipChanges[i];
+                    branchButton.GetComponentInChildren<Button>().onClick.AddListener(() => currentCharacter.StartDialogue(dIndex, relChange));
                     if (i == 0)
                     {
                         EventSystem.current.SetSelectedGameObject(branchButton);

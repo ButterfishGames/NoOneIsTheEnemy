@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     public static GameController singleton;
 
+    public int mapScene;
     public string playerName;
     public Character[] characters;
 
@@ -23,9 +25,8 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadScene(int index)
     {
-        
+        SceneManager.LoadScene(index);
     }
 }
