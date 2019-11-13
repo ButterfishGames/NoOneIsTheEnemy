@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager singleton;
+
+    public GameObject branchButtonPrefab;
 
     private Queue<string> sentences;
     private Queue<string> names;
@@ -38,6 +41,13 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         names.Clear();
 
+        GameObject branchPanel = GameObject.Find("BranchPanel");
+        Button[] buttons = branchPanel.GetComponentsInChildren<Button>();
+        foreach (Button button in buttons)
+        {
+            Destroy(button.gameObject);
+        }
+
         foreach (DialogueLine line in dialogue.lines)
         {
             names.Enqueue(line.name);
@@ -68,14 +78,42 @@ public class DialogueManager : MonoBehaviour
 
         GameObject.Find("NameText").GetComponent<Text>().text = name;
         GameObject.Find("LineText").GetComponent<Text>().text = line;
+
+        if (currentDialogue.type == DialogueType.branch && sentences.Count == 0)
+        {
+            EndDialogue();
+        }
     }
 
     private void EndDialogue()
     {
-        currentDialogue.End();
+        switch (currentDialogue.type)
+        {
+            case DialogueType.end:
+                Debug.Log("Dialogue over");
+                currentDialogue = null;
+                currentCharacter = null;
+                break;
 
-        currentDialogue = null;
-        currentCharacter = null;
+            case DialogueType.branch:
+                GameObject branchPanel = GameObject.Find("BranchPanel");
+                for (int i = 0; i < currentDialogue.branches.Length; i++)
+                {
+                    GameObject branchButton = Instantiate(branchButtonPrefab, branchPanel.transform);
+                    branchButton.GetComponentInChildren<Text>().text = currentDialogue.branches[i];
+                    int dIndex = currentDialogue.branchDialogues[i];
+                    branchButton.GetComponentInChildren<Button>().onClick.AddListener(() => currentCharacter.StartDialogue(dIndex));
+                    if (i == 0)
+                    {
+                        EventSystem.current.SetSelectedGameObject(branchButton);
+                    }
+                }
+                break;
+
+            default:
+                Debug.Log("ERROR: How did you break an enum?");
+                break;
+        }
     }
 
     private string DialogueProcessor(string input)

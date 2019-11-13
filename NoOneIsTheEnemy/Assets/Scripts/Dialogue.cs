@@ -17,10 +17,8 @@ public class Dialogue
     [Tooltip("Dialogues that happen after branches. Only used if Type is Branch. Refers to indices in Character's dialogue array")]
     public int[] branchDialogues;
 
-    public void End()
-    {
-        Debug.Log("Dialogue over");
-    }
+    [Tooltip("Relationship changes for different branch options. Only used if Type is Branch")]
+    public int[] relationshipChanges;
 }
 
 [System.Serializable]
@@ -32,6 +30,9 @@ public struct DialogueLine
     [Tooltip("The text of the dialogue line")]
     [TextArea(3, 10)]
     public string line;
+
+    [Tooltip("The index of the sprite associated with this line")]
+    public int sprite;
 }
 
 public enum DialogueType

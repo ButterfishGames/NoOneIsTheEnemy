@@ -30,9 +30,40 @@ MonoBehaviour:
     - name: '|*CHAR*|'
       line: Oh, |*PLAYER*|! I didn't see you there!
     - name: '|*CHAR*|'
-      line: Anyway, this is the end of this test dialogue.
+      line: What do you think of my watermark?
+    type: 0
+    branches:
+    - It's dumb!
+    - I love it!
+    - It's okay.
+    branchDialogues: 010000000200000003000000
+    relationshipChanges: ecffffff1400000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: Aw, but I kinda liked it...
     type: 1
     branches: []
-    branchDialogues: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Really? You like it?
+    - name: '|*PLAYER*|'
+      line: Yeah, it's awesome!
+    - name: '|*CHAR*|'
+      line: Thanks! I was worried you'd think it was weird.
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Yeah, that makes sense.
+    - name: '|*CHAR*|'
+      line: Honestly, it's kinda weird for a person to have a watermark.
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
   sprites: []
   relationship: -100

@@ -34,7 +34,12 @@ public class Character : ScriptableObject
 
     public void StartDialogue()
     {
-        int rand = Random.Range(0, dialogues.Length);
-        DialogueManager.singleton.StartDialogue(this, dialogues[rand]);
+        DialogueManager.singleton.StartDialogue(this, dialogues[0]); // TEST: REPLACE WITH RELATIONSHIP PARSING CODE
+    }
+
+    public void StartDialogue(int dIndex)
+    {
+        Debug.Log(dIndex);
+        DialogueManager.singleton.StartDialogue(this, dialogues[dIndex]);
     }
 }
