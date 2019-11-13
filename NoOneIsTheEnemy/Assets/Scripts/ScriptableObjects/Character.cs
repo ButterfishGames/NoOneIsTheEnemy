@@ -20,5 +20,21 @@ public class Character : ScriptableObject
     [Tooltip("Array of sprites. (Could only contain one)")]
     public Sprite[] sprites;
 
-    private int relationship = -100;
+    public int relationship;
+
+    private void OnEnable()
+    {
+        relationship = -100;
+    }
+
+    public void AdjustRelationship(int amt)
+    {
+        relationship += amt;
+    }
+
+    public void StartDialogue()
+    {
+        int rand = Random.Range(0, dialogues.Length);
+        DialogueManager.singleton.StartDialogue(this, dialogues[rand]);
+    }
 }
