@@ -20,5 +20,26 @@ public class Character : ScriptableObject
     [Tooltip("Array of sprites. (Could only contain one)")]
     public Sprite[] sprites;
 
-    private int relationship = -100;
+    public int relationship;
+
+    private void OnEnable()
+    {
+        relationship = -100;
+    }
+
+    public void AdjustRelationship(int amt)
+    {
+        relationship += amt;
+    }
+
+    public void StartDialogue()
+    {
+        DialogueManager.singleton.StartDialogue(this, dialogues[0]); // TEST: REPLACE WITH RELATIONSHIP PARSING CODE
+    }
+
+    public void StartDialogue(int dIndex, int relChange)
+    {
+        relationship += relChange;
+        DialogueManager.singleton.StartDialogue(this, dialogues[dIndex]);
+    }
 }

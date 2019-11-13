@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: c4fe1ab977def584296c85dea61abffd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gameplay.unity
     guid: 2414268713465754698e61221af45bbd
+  - enabled: 1
+    path: Assets/Scenes/TestingScenes/Daimee's Testing Scenes/DaimeeTesting2.unity
+    guid: d5eb41c04c8f74c4aa67519f3b924ae8
+  - enabled: 1
+    path: Assets/Scenes/TestingScenes/Daimee's Testing Scenes/DaimeeTesting.unity
+    guid: 163c049c92b890a44aa395e3c0112751
   m_configObjects: {}
