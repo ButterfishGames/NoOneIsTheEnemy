@@ -17,14 +17,17 @@ public class Character : ScriptableObject
     [Tooltip("List of possible dialogues")]
     public Dialogue[] dialogues;
 
-    [Tooltip("Array of sprites. (Could only contain one)")]
-    public Sprite[] sprites;
+    [Tooltip("Array of expression sprites. (Could only contain one)")]
+    public Sprite[] faceSprites;
 
     public int relationship;
+
+    public bool met;
 
     private void OnEnable()
     {
         relationship = -100;
+        met = false;
     }
 
     public void AdjustRelationship(int amt)

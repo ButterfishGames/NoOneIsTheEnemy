@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     private Dialogue currentDialogue;
 
     private bool primed;
+    private bool isBranched;
 
     // Start is called before the first frame update
     private void Start()
@@ -40,7 +41,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Submit") && EventSystem.current.currentSelectedGameObject == null)
+        if (Input.GetButtonDown("Submit") && EventSystem.current.currentSelectedGameObject == null && !GameController.singleton.loading && !isBranched)
         {
             primed = true;
         }
@@ -54,6 +55,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Character character, Dialogue dialogue)
     {
+        isBranched = false;
         sentences.Clear();
         names.Clear();
 
@@ -105,6 +107,8 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        currentCharacter.met = true;
+
         switch (currentDialogue.type)
         {
             case DialogueType.end:
@@ -115,6 +119,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case DialogueType.branch:
+                isBranched = true;
                 GameObject.Find("DialogueBox").GetComponent<Animator>().SetInteger("state", 1);
                 GameObject branchPanel = GameObject.Find("BranchPanel");
                 for (int i = 0; i < currentDialogue.branches.Length; i++)
