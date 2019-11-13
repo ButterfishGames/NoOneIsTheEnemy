@@ -13,6 +13,9 @@ public class Dialogue
 
     [Tooltip("Branch option text. Only used if Type is Branch. Should have 2-3 branches")]
     public string[] branches;
+
+    [Tooltip("Dialogues that happen after branches. Only used if Type is Branch. Should have the same number as number of branches.")]
+    public Dialogue[] branchDialogues;
 }
 
 [System.Serializable]
