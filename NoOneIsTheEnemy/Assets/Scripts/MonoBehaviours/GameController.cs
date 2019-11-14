@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +14,7 @@ public class GameController : MonoBehaviour
     public int dailyEnergy;
     public float fadeTime;
 
+    public int fileNum;
     public string playerName;
     public int money;
     public int energy;
@@ -22,6 +25,8 @@ public class GameController : MonoBehaviour
     private Image fadeImg;
 
     public bool loading;
+
+    private SaveData save;
 
     // Start is called before the first frame update
     void Start()
@@ -92,5 +97,33 @@ public class GameController : MonoBehaviour
         yield return Fade(false);
         fadeImg.enabled = false;
         loading = false;
+    }
+
+    public void Save()
+    {
+        save = new SaveData(fileNum, playerName, money, day, characters);
+
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/" + save.fileName);
+        bf.Serialize(file, save);
+        file.Close();
+    }
+
+    public void Load(int num)
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/foemance_save_" + num + ".dat", FileMode.Open);
+        save = (SaveData)bf.Deserialize(file);
+        file.Close();
+
+        StartCoroutine(FadeAndLoad(mapScene));
+        playerName = save.playerName;
+        money = save.money;
+        day = save.day;
+
+        for(int i = 0; i < characters.Length; i++)
+        {
+            characters[i].relationship = save.relationships[i];
+        }
     }
 }
