@@ -11,6 +11,8 @@ public class SaveData
     public int day;
 
     public int[] relationships;
+    public bool[] met;
+    public bool[][] read;
 
     public SaveData(int fileNum, string pName, int moneyAmt, int dayNum, Character[] characters)
     {
@@ -21,11 +23,18 @@ public class SaveData
         day = dayNum;
 
         List<int> relList = new List<int>();
-        foreach (Character character in characters)
+        List<bool> metList = new List<bool>();
+        List<bool[]> readList = new List<bool[]>();
+
+        foreach(Character character in characters)
         {
             relList.Add(character.relationship);
+            metList.Add(character.met);
+            readList.Add(character.read);
         }
 
         relationships = relList.ToArray();
+        met = metList.ToArray();
+        read = readList.ToArray();
     }
 }

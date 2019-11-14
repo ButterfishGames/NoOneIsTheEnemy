@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c1432ac98f4664e9b309b4cb8fcb1e, type: 3}
+  m_Name: Henry
+  m_EditorClassIdentifier: 
+  charName: Henry
+  pronouns:
+  - he
+  - him
+  - his
+  - his
+  - himself
+  dialogues:
+  - lines:
+    - name: ???
+      line: Oh for ****'s sake, another bloody hero.
+      sprite: 0
+    type: 0
+    branches:
+    - Are you Henry Edwards?
+    - Well that's a little rude.
+    branchDialogues: 0500000006000000
+    relationshipChanges: 0a000000f6ffffff
+  - lines:
+    - name: ???
+      line: Oh for ****'s sake, another bloody hero.
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: ???
+      line: Oh for ****'s sake, another bloody hero.
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: ???
+      line: Oh for ****'s sake, another bloody hero.
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: ???
+      line: Oh for ****'s sake, another bloody hero.
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Are you Henry Edwards?
+      sprite: 0
+    - name: Henry
+      line: What of it?
+      sprite: 0
+    type: 0
+    branches:
+    - I've been sent for your signature.
+    - (Lie) I've heard of your work...
+    branchDialogues: 0700000008000000
+    relationshipChanges: 0a000000ecffffff
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Well that's a little rude...
+      sprite: 0
+    - name: ???
+      line: Ye think I give a bloody ****? I swear to ****, you heroes are too *******
+        ***** t' function! You've all gotta be sunshine and rainbows out the arse
+        or ya just seize up, don't ya?!"
+      sprite: 0
+    type: 0
+    branches:
+    - I'm trying to be diplomatic here...
+    - Well **** you too!
+    branchDialogues: 090000000a000000
+    relationshipChanges: f6ffffff0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I've been sent to get your signature on--
+      sprite: 0
+    - name: Henry
+      line: '"**** off. Go bugger someone else fer yer ****** peace bull****.'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I've heard of your work and I was wondering if you could make me a weapon?
+      sprite: 0
+    - name: Henry
+      line: Hah! Bull****! If ya knew anythin' about my work, y' wouldn't be askin'
+        fer a weapon.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I'm trying to be diplomatic here...
+      sprite: 0
+    - name: ???
+      line: Shove it, ****.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Well **** you too!
+      sprite: 0
+    - name: ???
+      line: '....'
+      sprite: 0
+    - name: ???
+      line: Bahahahahaha!
+      sprite: 0
+    - name: ???
+      line: Watch yer bloody language.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  faceSprites: []
+  relationship: -100
+  met: 1

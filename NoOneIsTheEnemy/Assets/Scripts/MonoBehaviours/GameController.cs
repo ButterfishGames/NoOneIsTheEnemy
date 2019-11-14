@@ -135,6 +135,8 @@ public class GameController : MonoBehaviour
         for(int i = 0; i < characters.Length; i++)
         {
             characters[i].relationship = save.relationships[i];
+            characters[i].met = save.met[i];
+            characters[i].read = save.read[i];
         }
 
         LoadScene(mapScene);

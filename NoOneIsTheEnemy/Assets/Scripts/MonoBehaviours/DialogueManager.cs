@@ -121,10 +121,12 @@ public class DialogueManager : MonoBehaviour
                 {
                     currentCharacter.Love();
                 }
-                
-                currentDialogue = null;
-                currentCharacter = null;
-                GameController.singleton.LoadScene(GameController.singleton.mapScene);
+                else
+                {
+                    currentDialogue = null;
+                    currentCharacter = null;
+                    GameController.singleton.LoadScene(GameController.singleton.mapScene);
+                }
                 break;
 
             case DialogueType.branch:
