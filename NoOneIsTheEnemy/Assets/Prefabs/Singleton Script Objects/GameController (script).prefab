@@ -217,12 +217,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27d93a501ee1b74da2b57c2cb59b28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapScene: 0
-  dailyEnergy: 0
-  fadeTime: 0
+  mapScene: 1
+  dailyEnergy: 5
+  fadeTime: 1
+  fileNum: 0
   playerName: Fabio
   money: 0
   energy: 0
   day: 0
-  characters: []
+  characters:
+  - {fileID: 11400000, guid: d02d1b75bef2c40419f7b80ae153d395, type: 2}
   loading: 0

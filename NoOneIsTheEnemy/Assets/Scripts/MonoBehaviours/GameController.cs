@@ -43,8 +43,6 @@ public class GameController : MonoBehaviour
 
         fadeImg = GetComponentInChildren<Image>();
         fadeImg.enabled = false;
-
-        NewDay();
     }
 
     private void NewDay()
@@ -56,6 +54,7 @@ public class GameController : MonoBehaviour
         {
             mapControllers[0].UpdateUI();
         }
+        Save();
     }
 
     public void LoadScene(int index)
@@ -87,12 +86,18 @@ public class GameController : MonoBehaviour
 
         SceneManager.LoadScene(index);
 
-        if (index == mapScene && energy == 0)
+        yield return new WaitForSeconds(0.5f);
+
+        if (index == mapScene)
         {
-            day++;
-            energy = dailyEnergy;
+            FindObjectOfType<MapController>().UpdateUI();
+            if (energy == 0)
+            {
+                NewDay();
+            }
         }
-        yield return new WaitForSeconds(1.0f);
+
+        yield return new WaitForSeconds(0.5f);
 
         yield return Fade(false);
         fadeImg.enabled = false;
@@ -111,8 +116,14 @@ public class GameController : MonoBehaviour
 
     public void Load(int num)
     {
+        if (!File.Exists(Application.persistentDataPath + "/vds_save_" + num + ".dat"))
+        {
+            Debug.Log("ERROR: File vds_save_" + num + ".dat not found");
+            return;
+        }
+
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Open(Application.persistentDataPath + "/foemance_save_" + num + ".dat", FileMode.Open);
+        FileStream file = File.Open(Application.persistentDataPath + "/vds_save_" + num + ".dat", FileMode.Open);
         save = (SaveData)bf.Deserialize(file);
         file.Close();
 
@@ -125,5 +136,20 @@ public class GameController : MonoBehaviour
         {
             characters[i].relationship = save.relationships[i];
         }
+
+        LoadScene(mapScene);
+    }
+
+    public void NewGame(int num)
+    {
+        fileNum = num;
+        day = 0;
+        LoadScene(mapScene);
+        NewDay();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

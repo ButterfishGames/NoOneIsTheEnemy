@@ -41,12 +41,12 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Submit") && EventSystem.current.currentSelectedGameObject == null && !GameController.singleton.loading && !isBranched)
+        if ((Input.GetButtonDown("Submit") || Input.GetButtonDown("Mouse0")) && EventSystem.current.currentSelectedGameObject == null && !GameController.singleton.loading && !isBranched)
         {
             primed = true;
         }
 
-        if (Input.GetButtonUp("Submit") && EventSystem.current.currentSelectedGameObject == null && primed)
+        if ((Input.GetButtonUp("Submit") || Input.GetButtonDown("Mouse0")) && EventSystem.current.currentSelectedGameObject == null && primed)
         {
             DisplayNextLine();
             primed = false;

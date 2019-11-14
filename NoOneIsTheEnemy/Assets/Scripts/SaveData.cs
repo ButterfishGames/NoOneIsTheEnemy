@@ -14,7 +14,7 @@ public class SaveData
 
     public SaveData(int fileNum, string pName, int moneyAmt, int dayNum, Character[] characters)
     {
-        fileName = "foemance_save_" + fileNum + ".dat";
+        fileName = "vds_save_" + fileNum + ".dat";
 
         playerName = pName;
         money = moneyAmt;

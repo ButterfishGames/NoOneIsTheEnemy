@@ -9,7 +9,14 @@ public class MapController : MonoBehaviour
 
     public void UpdateUI()
     {
-        dayText.text = "Day " + GameController.singleton.day;
+        if (GameController.singleton.day % 2 == 1)
+        {
+            dayText.text = "Day " + Mathf.CeilToInt(GameController.singleton.day/2.0f);
+        }
+        else
+        {
+            dayText.text = "Night " + (GameController.singleton.day / 2);
+        }
         moneyText.text = "Money: " + GameController.singleton.money;
         energyText.text = "Energy: " + GameController.singleton.energy + "/" + GameController.singleton.dailyEnergy;
     }
