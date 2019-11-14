@@ -5,20 +5,26 @@ using UnityEngine.UI;
 
 public class MapController : MonoBehaviour
 {
-    public Text dayText, moneyText, energyText;
+    public Text dayText, moneyText;
+    public Image dayUI, energyUI;
+    public Sprite daySprite, nightSprite;
+    public Sprite[] energySprites;
 
     public void UpdateUI()
     {
         if (GameController.singleton.day % 2 == 1)
         {
+            dayUI.sprite = daySprite;
             dayText.text = "Day " + Mathf.CeilToInt(GameController.singleton.day/2.0f);
         }
         else
         {
+            dayUI.sprite = nightSprite;
             dayText.text = "Night " + (GameController.singleton.day / 2);
         }
-        moneyText.text = "Money: " + GameController.singleton.money;
-        energyText.text = "Energy: " + GameController.singleton.energy + "/" + GameController.singleton.dailyEnergy;
+        moneyText.text = GameController.singleton.money.ToString();
+
+        energyUI.sprite = energySprites[GameController.singleton.energy];
     }
 
     public void Travel (int sceneIndex)

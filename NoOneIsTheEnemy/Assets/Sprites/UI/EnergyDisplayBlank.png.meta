@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: 7b64cf792a494a54a9acdc8d9cc75949
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6722189167107648230
+    second: EnergyDisplayBlank_0
+  - first:
+      213: 7358502740979682870
+    second: EnergyDisplayBlank_1
+  - first:
+      213: 6069611277131200955
+    second: EnergyDisplayBlank_2
+  - first:
+      213: 2301146369670745509
+    second: EnergyDisplayBlank_3
+  - first:
+      213: 2089337483932082948
+    second: EnergyDisplayBlank_4
+  - first:
+      213: -7709575664536530225
+    second: EnergyDisplayBlank_5
+  - first:
+      213: 1518901746699718798
+    second: EnergyDisplayBlank_6
+  - first:
+      213: 8442879966815661872
+    second: EnergyDisplayBlank_7
+  - first:
+      213: 1989310343451317831
+    second: EnergyDisplayBlank_8
+  - first:
+      213: 7868415370961310996
+    second: EnergyDisplayBlank_9
+  - first:
+      213: -8054239254624417924
+    second: EnergyDisplayBlank_10
+  - first:
+      213: 97386606007487348
+    second: EnergyDisplayBlank_11
+  - first:
+      213: -2924424679918715141
+    second: EnergyDisplayBlank_12
+  - first:
+      213: 4374912791764686671
+    second: EnergyDisplayBlank_13
+  - first:
+      213: -7348164982577469946
+    second: EnergyDisplayBlank_14
+  - first:
+      213: -839541749548708575
+    second: EnergyDisplayBlank_15
+  - first:
+      213: 2174996220847233654
+    second: EnergyDisplayBlank_16
+  - first:
+      213: 4652416948033845106
+    second: EnergyDisplayBlank_17
+  - first:
+      213: -7619939898903723233
+    second: EnergyDisplayBlank_18
+  - first:
+      213: -7703084712263857056
+    second: EnergyDisplayBlank_19
+  - first:
+      213: 6974037654813623504
+    second: EnergyDisplayBlank_20
+  - first:
+      213: 7033160602947189853
+    second: EnergyDisplayBlank_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3fff75bf5187e47bda14d1ee66bfd1
+      internalID: 6722189167107648230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 168
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3c828963d7ba6458061b0bca1366b1
+      internalID: 7358502740979682870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 168
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dd1362803d4334397bcda7c0f0fd6d
+      internalID: 6069611277131200955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacf9798969533f48b39faf56f19a8a1
+      internalID: 2301146369670745509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 144
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c628ed963b783409f7566a5e6fa5fe
+      internalID: 2089337483932082948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 144
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5277dd7fdff704ea0b464886c9b9da
+      internalID: -7709575664536530225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ca535233f349c49afc5d0886b0779c
+      internalID: 1518901746699718798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 120
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3b52f983240b54ab7d04fbbb947a3a
+      internalID: 8442879966815661872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 120
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076498d9272a5c84195f5cb784474042
+      internalID: 1989310343451317831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718d686bf9fdf314ea58784f8ff35c60
+      internalID: 7868415370961310996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 96
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b1226e4b60c5f41a1679309ba4aa46
+      internalID: -8054239254624417924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_11
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 96
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300168cd5460b7941981a94eeb3d2838
+      internalID: 97386606007487348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bf6f1066b91cd40bad5ac0e4b4bd39
+      internalID: -2924424679918715141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 72
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba757036df3456d48b9c46a60c0c14f8
+      internalID: 4374912791764686671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 72
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d8085a4e5c0704fa8cd73609cfc3ff
+      internalID: -7348164982577469946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08dedecb975315a4da3aa06584476101
+      internalID: -839541749548708575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 48
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea93afb8d9d41414e875ec855c30322d
+      internalID: 2174996220847233654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 48
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451decfe8ee2a614fb026088956804aa
+      internalID: 4652416948033845106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df44f9540daaa3444b00184dfbe10e53
+      internalID: -7619939898903723233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_19
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 24
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6799fc0529f6d654ea6a1fb801594f15
+      internalID: -7703084712263857056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_20
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 24
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de605baea49b8d4458735df19d4f1f8f
+      internalID: 6974037654813623504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyDisplayBlank_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 61
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef52407ae0684694eae226de950b331a
+      internalID: 7033160602947189853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 477640993c0085d4ea2bd53fee602a85
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

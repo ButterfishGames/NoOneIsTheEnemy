@@ -42,4 +42,14 @@ public class Character : ScriptableObject
         relationship += relChange;
         DialogueManager.singleton.StartDialogue(this, dialogues[dIndex]);
     }
+
+    public void Kill()
+    {
+
+    }
+
+    public void Love()
+    {
+
+    }
 }

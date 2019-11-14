@@ -109,10 +109,19 @@ public class DialogueManager : MonoBehaviour
     {
         currentCharacter.met = true;
 
+        if (currentCharacter.relationship <= -150)
+        {
+            currentCharacter.Kill();
+        }
+
         switch (currentDialogue.type)
         {
             case DialogueType.end:
-                Debug.Log("Dialogue over");
+                if (currentCharacter.relationship > 100)
+                {
+                    currentCharacter.Love();
+                }
+                
                 currentDialogue = null;
                 currentCharacter = null;
                 GameController.singleton.LoadScene(GameController.singleton.mapScene);
