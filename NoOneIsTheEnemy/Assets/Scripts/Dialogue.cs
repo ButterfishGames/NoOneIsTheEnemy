@@ -19,6 +19,16 @@ public class Dialogue
 
     [Tooltip("Relationship changes for different branch options. Only used if Type is Branch")]
     public int[] relationshipChanges;
+
+    public Dialogue(string name, string line)
+    {
+        DialogueLine dialogueLine = new DialogueLine();
+        dialogueLine.name = name;
+        dialogueLine.line = line;
+
+        lines = new DialogueLine[] { dialogueLine };
+        type = DialogueType.end;
+    }
 }
 
 [System.Serializable]

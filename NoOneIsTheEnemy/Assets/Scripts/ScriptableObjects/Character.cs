@@ -47,6 +47,8 @@ public class Character : ScriptableObject
 
     [TextArea(3, 10)]
     public string[] deaths;
+    
+    public int[] gGiftsReceived;
 
     private void OnEnable()
     {
@@ -57,11 +59,8 @@ public class Character : ScriptableObject
         }
         relationship = -100;
         met = false;
-    }
 
-    public void AdjustRelationship(int amt)
-    {
-        relationship += amt;
+        gGiftsReceived = new int[]{ 0, 0, 0 };
     }
 
     public void StartDialogue()

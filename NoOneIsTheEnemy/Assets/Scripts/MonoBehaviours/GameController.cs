@@ -24,11 +24,14 @@ public class GameController : MonoBehaviour
     public int day;
 
     public Character[] characters;
+    public int[] characterScenes;
 
     private Image fadeImg;
 
     public bool loading;
     public bool dead;
+
+    public bool[] bigGiftsPurchased;
 
     private SaveData save;
 
@@ -47,6 +50,8 @@ public class GameController : MonoBehaviour
 
         fadeImg = GetComponentInChildren<Image>();
         fadeImg.enabled = false;
+
+        bigGiftsPurchased = new bool[]{ false, false, false };
     }
 
     private void NewDay()
@@ -64,6 +69,11 @@ public class GameController : MonoBehaviour
     public void LoadScene(int index)
     {
         StartCoroutine(FadeAndLoad(index));
+    }
+
+    public void LoadScene(int index, int dIndex)
+    {
+        StartCoroutine(FadeAndLoad(index, dIndex));
     }
 
     private IEnumerator Fade(bool fadeOut)
@@ -108,9 +118,28 @@ public class GameController : MonoBehaviour
         loading = false;
     }
 
+    private IEnumerator FadeAndLoad(int index, int dIndex)
+    {
+        loading = true;
+        fadeImg.enabled = true;
+        yield return Fade(true);
+
+        SceneManager.LoadScene(index);
+
+        yield return new WaitForSeconds(0.5f);
+
+        FindObjectOfType<SceneController>().sceneChar.StartDialogue(dIndex, 0);
+
+        yield return new WaitForSeconds(0.5f);
+
+        yield return Fade(false);
+        fadeImg.enabled = false;
+        loading = false;
+    }
+
     public void Save()
     {
-        save = new SaveData(fileNum, playerName, money, day, characters);
+        save = new SaveData(fileNum, playerName, money, day, bigGiftsPurchased, characters);
 
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/" + save.fileName);
@@ -135,12 +164,14 @@ public class GameController : MonoBehaviour
         playerName = save.playerName;
         money = save.money;
         day = save.day;
+        bigGiftsPurchased = save.bigGiftsPurchased;
 
         for(int i = 0; i < characters.Length; i++)
         {
             characters[i].relationship = save.relationships[i];
             characters[i].met = save.met[i];
             characters[i].read = save.read[i];
+            characters[i].gGiftsReceived = save.gGiftsReceived[i];
         }
 
         LoadScene(mapScene);
@@ -156,15 +187,37 @@ public class GameController : MonoBehaviour
         NewDay();
     }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
     public void Work()
     {
         energy -= 2;
         money += paycheck;
         LoadScene(mapScene);
+    }
+
+    public void Give(int character, int gift)
+    {
+        if (gift < 4)
+        {
+            characters[character].relationship += Mathf.Clamp(10 - characters[character].gGiftsReceived[gift - 1], 1, 10);
+            characters[character].gGiftsReceived[gift - 1]++;
+            LoadScene(characterScenes[character], characters[character].giftDialogueIndices[0]);
+        }
+        else if (gift == character + 4)
+        {
+            bigGiftsPurchased[gift - 4] = true;
+            characters[character].relationship += 50;
+            LoadScene(characterScenes[character], characters[character].giftDialogueIndices[1]);
+        }
+        else
+        {
+            bigGiftsPurchased[gift - 4] = true;
+            characters[character].relationship -= 50;
+            LoadScene(characterScenes[character], characters[character].giftDialogueIndices[2]);
+        }
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -117,7 +117,7 @@ public class DialogueManager : MonoBehaviour
         switch (currentDialogue.type)
         {
             case DialogueType.end:
-                if (currentCharacter.relationship > 100)
+                if (currentCharacter != null && currentCharacter.relationship > 100)
                 {
                     currentCharacter.Love();
                 }
