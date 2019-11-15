@@ -709,18 +709,27 @@ MonoBehaviour:
     - Take it.
     branchDialogues: 35000000
     relationshipChanges: 00000000
-  read: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  faceSprites: []
+  read: 01000000000100000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  faceSprites:
+  - {fileID: 21300000, guid: d74af556dcc7717408fd618ce8e7470c, type: 3}
+  - {fileID: 21300000, guid: c8072cc21849df944ab8f5da631b60a2, type: 3}
+  - {fileID: 21300000, guid: 84887bd0c5c09be4a87b5c83ba15b9d8, type: 3}
+  - {fileID: 21300000, guid: d7ca403398515db468e0591108a561b9, type: 3}
+  - {fileID: 21300000, guid: 71aa0dcde6794ea4c8d68ba1df139f3d, type: 3}
+  - {fileID: 21300000, guid: 6920aa9df030a5340825f982d3d24762, type: 3}
+  - {fileID: 21300000, guid: 82e6c8f43cfad8b48bd83ef38333da93, type: 3}
+  - {fileID: 21300000, guid: 70f5c7cd16aaeb9429c71a5f23913511, type: 3}
   firstKillIndex: 54
   hateDialogueIndices: 0d00000010000000
   neutralDialogueIndices: 140000001a000000
   likedDialogueIndices: 21000000280000002b000000
   giftDialogueIndices: 320000003300000034000000
-  relationship: -100
-  met: 0
+  relationship: -110
+  met: 1
   deaths:
   - "As you hold up Henry's \"gift\" to try and determine what it might be, you are
     suddenly hit with an overwhelming, suffocating smell of flowers. It fills your
     lungs and doesn't leave, even as you drop to the ground in a violent coughing
     fit. The last thing you're aware of as you lose consciousness is Henry's maniacal
     laughter.\r\n\r\nYou never wake up."
+  gGiftsReceived: 000000000000000000000000
