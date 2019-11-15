@@ -9,6 +9,7 @@ public class ShopController : MonoBehaviour
     public int genericCost, specialCost;
     public GameObject receiverPanel;
     public Button hGift, pGift, mGift;
+    public Text moneyText;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class ShopController : MonoBehaviour
         {
             GameController.singleton.money -= cost;
             selected = gift;
+            UpdateUI();
             receiverPanel.SetActive(true);
         }
         else
@@ -45,6 +47,7 @@ public class ShopController : MonoBehaviour
 
     private void UpdateUI()
     {
+        moneyText.text = GameController.singleton.money.ToString();
         hGift.interactable = !GameController.singleton.bigGiftsPurchased[0];
         pGift.interactable = !GameController.singleton.bigGiftsPurchased[1];
         mGift.interactable = !GameController.singleton.bigGiftsPurchased[2];

@@ -145,7 +145,7 @@ public class Character : ScriptableObject
 
     public void Kill()
     {
-
+        StartDialogue(Random.Range(firstKillIndex, dialogues.Length), 0);
     }
 
     public void Love()

@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 
     public int mapScene;
     public int endScene;
+    public int shopScene;
 
     public int dailyEnergy;
     public int paycheck;

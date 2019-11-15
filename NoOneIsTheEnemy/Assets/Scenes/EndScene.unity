@@ -224,6 +224,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endText: {fileID: 1331675775}
+  zeroMessage: 'The armistice ended.
+
+
+    Having failed to gain the allegiance of any of the villains, the war raged on
+    ad infinitum, claiming countless lives in its wake.'
+  allMessage: 'The armistice ended...
+
+
+    But the peace didn''t. Heroes and Villains alike are now able to coexist peacefully,
+    and no more lives were lost to what had seemed an unending war.
+
+
+    Now, no one is the enemy.'
+  betweenMessage: 'The armistice ended.
+
+
+    With the help of its new allies among the villains'' numbers, the Kingdom of Heroes
+    was able to defeat its remaining opponents and end the war, albeit at great cost
+    on all sides.'
 --- !u!4 &254302665
 Transform:
   m_ObjectHideFlags: 0

@@ -218,7 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapScene: 1
-  endScene: 3
+  endScene: 4
+  shopScene: 3
   dailyEnergy: 5
   paycheck: 100
   fadeTime: 1

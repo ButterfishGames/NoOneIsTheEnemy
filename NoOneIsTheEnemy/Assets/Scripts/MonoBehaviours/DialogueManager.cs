@@ -174,7 +174,10 @@ public class DialogueManager : MonoBehaviour
     {
         string output = input;
 
-        output = output.Replace("|*CHAR*|", currentCharacter.charName);
+        if (currentCharacter != null)
+        {
+            output = output.Replace("|*CHAR*|", currentCharacter.charName);
+        }
         output = output.Replace("|*PLAYER*|", GameController.singleton.playerName);
 
         return output;

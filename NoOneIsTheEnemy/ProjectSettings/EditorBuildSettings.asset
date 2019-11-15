@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HenryScene.unity
     guid: 536df98b693937c438bebd59e2013f78
   - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: 40893c7d1725de64f8d95cdc96f93a02
+  - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 3dcc7ee7e4dd90b488f5c5fc470b75b7
   m_configObjects: {}
