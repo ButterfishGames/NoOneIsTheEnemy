@@ -651,25 +651,31 @@ MonoBehaviour:
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Eh? Some kinda peace offerin'? I'll take it, I s'pose.
       sprite: 0
-    type: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: '......'
       sprite: 0
-    type: 0
+    - name: Henry
+      line: Well ****, this could actually be useful...
+      sprite: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Oi, think just because I'm a mad scientist I can use just any old ****
+        for my work? "Oh sure I'll just give him this random **** I found, he can
+        just throw it in a potion with some eyes of newt and it'll prob'ly do somethin'!"
+        **** off.
       sprite: 0
-    type: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
@@ -703,14 +709,15 @@ MonoBehaviour:
     - Take it.
     branchDialogues: 35000000
     relationshipChanges: 00000000
-  read: 01000000000100010000000000000000010000010000000000000100000000000000000000000000000000000000000000000000000000
+  read: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   faceSprites: []
   firstKillIndex: 54
   hateDialogueIndices: 0d00000010000000
   neutralDialogueIndices: 140000001a000000
   likedDialogueIndices: 21000000280000002b000000
-  relationship: -60
-  met: 1
+  giftDialogueIndices: 320000003300000034000000
+  relationship: -100
+  met: 0
   deaths:
   - "As you hold up Henry's \"gift\" to try and determine what it might be, you are
     suddenly hit with an overwhelming, suffocating smell of flowers. It fills your

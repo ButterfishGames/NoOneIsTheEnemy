@@ -38,6 +38,9 @@ public class Character : ScriptableObject
     [Tooltip("An array of indices of liked dialogues in the dialogues array")]
     public int[] likedDialogueIndices;
 
+    [Tooltip("0 should be generic, 1 should be personal, 2 should be wrong personal")]
+    public int[] giftDialogueIndices;
+
     public int relationship;
 
     public bool met;
