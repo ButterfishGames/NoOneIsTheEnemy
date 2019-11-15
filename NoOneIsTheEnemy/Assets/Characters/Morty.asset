@@ -29,7 +29,7 @@ MonoBehaviour:
     - I'm looking for a necromancer...
     - Are you, um, ok?
     branchDialogues: 0500000006000000
-    relationshipChanges: 
+    relationshipChanges: 0000000000000000
   - lines:
     - name: Morty
       line: Look, this isn't easy to admit. But... I may have been... wrong, about
@@ -556,7 +556,7 @@ MonoBehaviour:
     branches: []
     branchDialogues: 
     relationshipChanges: 
-  read: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  read: 01000000000100000000000000000000000000000000000000000000000000000000000000000000000000
   faceSprites:
   - {fileID: 21300000, guid: 90e86563f1032de44af3d0e800e990a2, type: 3}
   - {fileID: 21300000, guid: 4f768b3a13ae9804aba832e87aa2392e, type: 3}
@@ -573,7 +573,7 @@ MonoBehaviour:
   likedDialogueIndices: 2100000024000000
   giftDialogueIndices: 270000002800000029000000
   relationship: -100
-  met: 0
+  met: 1
   deaths:
   - 'As soon as you turn around, you''re immediately hit on the back of the head with
     a shovel. Admittedly, you kind of walked into that one.
