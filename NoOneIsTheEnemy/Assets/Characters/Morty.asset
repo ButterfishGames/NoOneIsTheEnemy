@@ -23,7 +23,7 @@ MonoBehaviour:
   - lines:
     - name: Morty
       line: (deep sigh) ... Yes?
-      sprite: 0
+      sprite: 2
     type: 0
     branches:
     - I'm looking for a necromancer...
@@ -34,7 +34,7 @@ MonoBehaviour:
     - name: Morty
       line: Look, this isn't easy to admit. But... I may have been... wrong, about
         some things.
-      sprite: 0
+      sprite: 1
     - name: '|*PLAYER*|'
       line: What things?
       sprite: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
       line: I had this dream, of delivering a plague unto humanity that would make
         them all mindless undead. I thought there was nothing to be gained from humans
         having free will. But...
-      sprite: 0
+      sprite: 1
     - name: '|*PLAYER*|'
       line: But?
       sprite: 0
@@ -51,17 +51,17 @@ MonoBehaviour:
         not the only good in the world. In fact, the greatest evil that comes from
         intelligence... is the blind justification of imposing one's will on the world
         around them.
-      sprite: 0
+      sprite: 1
     - name: '|*PLAYER*|'
       line: Huh?
       sprite: 0
     - name: 
       line: They smile.
-      sprite: 0
+      sprite: 3
     - name: Morty
       line: In other words, I've been doing the very thing I was trying to prevent.
         Thank you, for helping me see that.
-      sprite: 0
+      sprite: 2
     type: 0
     branches:
     - (Friendship ending)
@@ -108,14 +108,14 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: You've found one, but I suggest you keep looking.
-      sprite: 0
+      sprite: 1
     - name: '|*PLAYER*|'
       line: But aren't you--
       sprite: 0
     - name: Morty
       line: Listen here, paladin. I don't care about your mission. Tell your king
         you were unsuccessful, let the war resume, and we won't have any more trouble.
-      sprite: 0
+      sprite: 5
     type: 0
     branches:
     - '..."paladin"?'
@@ -128,7 +128,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Are any of us okay?
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - I don't... know how to respond to that.
@@ -154,7 +154,7 @@ MonoBehaviour:
       line: Most of the time, yes. In this case, however, it was IMPERATIVE that our
         factions remain hostile towards one another for the next two months, give
         or take.
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - That's insane.
@@ -167,7 +167,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Good. Don't.
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - Um. Well, I'm here on behalf of--
@@ -180,7 +180,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Thanks.
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -194,7 +194,7 @@ MonoBehaviour:
         it? Clearly, there is no way for us to reach an agreement. We have completely
         different goals, and the only way to settle them is to continue with the war.
         Sorry to disappoint, but that's the way it has to be. Goodbye, paladin.
-      sprite: 0
+      sprite: 1
     - name: 
       line: Morty is no longer looking at you, seemingly expecting you to leave.
       sprite: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
     - name: Morty
       line: While I'm delighted that you're taking an interest, I am afraid I can't
         disclose details to a representative of an enemy faction.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -223,7 +223,7 @@ MonoBehaviour:
         signing your treaty, and neither will any of my associates. It would be in
         your best interest to give up now and pretend this silly little cease-fire
         never happened.'
-      sprite: 0
+      sprite: 6
     type: 1
     branches: []
     branchDialogues: 
@@ -243,7 +243,7 @@ MonoBehaviour:
     - name: Morty
       line: If it wouldn't cost me my funding, I would sic a small army of the undead
         upon you.
-      sprite: 0
+      sprite: 5
     type: 0
     branches:
     - Wouldn't that be against your beliefs?
@@ -256,7 +256,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Not at all.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -276,7 +276,7 @@ MonoBehaviour:
     - name: Morty
       line: Still coming to me? After all the grief you've caused me? You must be
         desperate.
-      sprite: 0
+      sprite: 5
     type: 0
     branches:
     - I don't know what else to do.
@@ -289,7 +289,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Clearly.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -301,7 +301,7 @@ MonoBehaviour:
     - name: Morty
       line: Determined to what? Manipulate me? //Teach// me some valuable lesson that
         you think I'm just not getting? I'm done listening to you.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -309,7 +309,7 @@ MonoBehaviour:
   - lines:
     - name: Morty
       line: Go home, paladin. Why are you still here?
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - It's my job to convince you to sign the peace treaty.
@@ -324,7 +324,7 @@ MonoBehaviour:
       line: Oh, of course. They send you because it's your //job// to obey orders,
         so you can't be blamed. You're an innocent. They could never send one of their
         own, because then we'd see how corrupt they really are.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -338,7 +338,7 @@ MonoBehaviour:
         if your timing weren't so frustrating! You're trying so hard to end one war,
         but if your people bothered listening to ME, I could end the senseless violence
         for good!
-      sprite: 0
+      sprite: 5
     type: 0
     branches:
     - You really think so?
@@ -351,7 +351,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Well... yes. If someone is willing to give me a chance.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -362,7 +362,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Dismiss me if you wish. It won't make you a better person.
-      sprite: 0
+      sprite: 2
     type: 1
     branches: []
     branchDialogues: 
@@ -371,7 +371,7 @@ MonoBehaviour:
     - name: Morty
       line: Animals are strange, aren't they? It seems that the more intelligent the
         species, the more cruelty it's capable of...
-      sprite: 0
+      sprite: 2
     type: 0
     branches:
     - I don't know about that; octopuses are pretty nice.
@@ -385,7 +385,7 @@ MonoBehaviour:
     - name: Morty
       line: Have you ever MET an octopus?? I've read their minds; they're scheming
         little bastards.
-      sprite: 0
+      sprite: 4
     type: 1
     branches: []
     branchDialogues: 
@@ -396,7 +396,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Hrmph. Exactly.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -404,7 +404,7 @@ MonoBehaviour:
   - lines:
     - name: Mortty
       line: What do you think of necromancy, as a discipline?
-      sprite: 0
+      sprite: 2
     type: 0
     branches:
     - I'm terrified of it, honestly.
@@ -419,7 +419,7 @@ MonoBehaviour:
     - name: Morty
       line: You really don't need to be. Perhaps if you met some of my little friends,
         you would see that they're nothing to fear.
-      sprite: 0
+      sprite: 2
     type: 1
     branches: []
     branchDialogues: 
@@ -430,7 +430,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: (beleaguered sigh) ...You're overthinking it, paladin.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -441,7 +441,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Heck yes they are.
-      sprite: 0
+      sprite: 7
     type: 1
     branches: []
     branchDialogues: 
@@ -463,7 +463,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Indeed.
-      sprite: 0
+      sprite: 2
     type: 1
     branches: []
     branchDialogues: 
@@ -474,7 +474,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: '...That is true. I suppose I WAS wrong about you, at least...'
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: What? No, I.... hm. Overthinking leads to more problems, but...
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -509,7 +509,7 @@ MonoBehaviour:
       sprite: 0
     - name: Morty
       line: Hm? Oh, yes. Of course you do.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -517,7 +517,7 @@ MonoBehaviour:
   - lines:
     - name: Morty
       line: Oh, what a kind, simple gesture.
-      sprite: 0
+      sprite: 8
     type: 1
     branches: []
     branchDialogues: 
@@ -525,7 +525,7 @@ MonoBehaviour:
   - lines:
     - name: Morty
       line: You got this specifically for me? ......Thank you, paladin.
-      sprite: 0
+      sprite: 2
     type: 1
     branches: []
     branchDialogues: 
@@ -533,7 +533,7 @@ MonoBehaviour:
   - lines:
     - name: Morty
       line: (deep sigh) Nobody ever listens..
-      sprite: 0
+      sprite: 4
     type: 1
     branches: []
     branchDialogues: 
@@ -541,32 +541,23 @@ MonoBehaviour:
   - lines:
     - name: 
       line: Morty seems eerily calm today.
-      sprite: 0
+      sprite: 8
     - name: '|*PLAYER*|'
       line: So... what's up?
-      sprite: 0
+      sprite: 8
     - name: Morty
       line: Oh, nothing much. I've just decided on a solution to all our problems,
         that's all. In fact, it's right over there.
-      sprite: 0
+      sprite: 7
     - name: 
       line: You turn around and look.
-      sprite: 0
+      sprite: 8
     type: 2
     branches: []
     branchDialogues: 
     relationshipChanges: 
-  read: 01000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  faceSprites:
-  - {fileID: 21300000, guid: 90e86563f1032de44af3d0e800e990a2, type: 3}
-  - {fileID: 21300000, guid: 4f768b3a13ae9804aba832e87aa2392e, type: 3}
-  - {fileID: 21300000, guid: d44110100ac77504d8f20ccf3d2c0fa9, type: 3}
-  - {fileID: 21300000, guid: 49347017144b60c4db59149fb173074d, type: 3}
-  - {fileID: 21300000, guid: a5a05821dae8e6b49bba1f1573aa2f24, type: 3}
-  - {fileID: 21300000, guid: 47f9281391f83d7449da630c3d6cf0ba, type: 3}
-  - {fileID: 21300000, guid: 93af61f637044af4284e39706a19e3e8, type: 3}
-  - {fileID: 21300000, guid: f44aaa3a3432c95428c7fb9904eefc00, type: 3}
-  - {fileID: 21300000, guid: adb0a39e4d1458a4393222f07d04da95, type: 3}
+  read: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  faceSprites: []
   firstKillIndex: 42
   hateDialogueIndices: 0f00000012000000
   neutralDialogueIndices: 150000001a0000001d000000
