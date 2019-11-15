@@ -19,7 +19,302 @@ MonoBehaviour:
   - her
   - hers
   - herself
-  dialogues: []
+  dialogues:
+  - lines:
+    - name: ???
+      line: (Appears suddenly)
+      sprite: 0
+    type: 0
+    branches:
+    - '"AAAAAAA!!!"'
+    - '"Oh! You suprised me there. You must be Pamel?"'
+    - '"I could hear you breathing."'
+    branchDialogues: 010000000200000003000000
+    relationshipChanges: f6ffffff0000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"AAAAHHHH!"'
+      sprite: 0
+    - name: Pamela
+      line: '"Shhhhh!"'
+      sprite: 0
+    type: 2
+    branches:
+    - '"AAAAAAAHHHHHH!"'
+    - '"Uh, my name is |*CHAR*|, and I''m here to discuss the Treaty."'
+    - '"Could you please not do that ever again?"'
+    branchDialogues: 010000000500000002000000
+    relationshipChanges: f6ffffff0000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"Please don''t do that."'
+      sprite: 0
+    - name: Pamela
+      line: State your business.
+      sprite: 0
+    type: 0
+    branches:
+    - '"I''m |*CHAR*|, I represent the King. We''d like to apologize."'
+    - '"Uh, my name is |*CHAR*|, and I''m here to discuss the Treaty."'
+    - '"The name''s |*CHAR*|, and I heard there was a lonely damsel waiting to be
+      saved?"'
+    branchDialogues: 060000000500000007000000
+    relationshipChanges: f6ffffff00000000f6ffffff
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"Oh, you suprised me there. You must be Pamela?"'
+      sprite: 0
+    - name: Pamela
+      line: '"Correct. And you are?"'
+      sprite: 0
+    type: 0
+    branches:
+    - '"My name is |*CHAR*|. I''m here to further discusss the Treaty."'
+    - '"The name''s |*CHAR*|, and I heard there was a lonely damsel waiting to be
+      saved?"'
+    - '"I''m |*CHAR*|, I represent the King. We''d like to apologize."'
+    branchDialogues: 050000000700000006000000
+    relationshipChanges: 00000000f6fffffff6ffffff
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"I could hear your heavy breathing."'
+      sprite: 0
+    - name: Pamela
+      line: '"Perceptive. What are you doing here?'
+      sprite: 0
+    type: 0
+    branches:
+    - '"I''m here to show you a good time."'
+    - '"I''d like to apologize on behalf of the King."'
+    - '"I''m here to discuss the Treaty."'
+    branchDialogues: 090000000800000005000000
+    relationshipChanges: f6ffffff0000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"I am |*CHAR*|, and I''m here on behalf of the King to discuss the Treaty."'
+      sprite: 0
+    - name: Pamela
+      line: '"The Treaty? What more is there to discuss? I have already sworn to not
+        invade anyone''s land for the next week."'
+      sprite: 0
+    type: 0
+    branches:
+    - I'm here to court you.
+    - Join us.
+    - Join us or die.
+    branchDialogues: 0a0000000b0000000c000000
+    relationshipChanges: 00000000000000000a000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: I'm |*CHAR*|, and I represent the King. We'd like to apologize for forcing
+        the Treaty onto you.
+      sprite: 0
+    - name: Pamela
+      line: Your king can shove it. Get out of my sight.
+      sprite: 0
+    type: 2
+    branches:
+    - Understood.
+    - No.
+    - But we have more to discuss.
+    branchDialogues: 110000001200000010000000
+    relationshipChanges: 000000000000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: I'm |*CHAR*|, and I heard that there was a maiden as lovely as she is
+        lonely around here?
+      sprite: 0
+    - name: Pamela
+      line: Had it not been for the Treaty, I would have slaughtered you for that
+        comment. Be gone.
+      sprite: 0
+    type: 2
+    branches:
+    - Understood
+    - No
+    - But we still have more to discuss
+    branchDialogues: 110000001200000010000000
+    relationshipChanges: 000000000000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: '"Our King is very sorry for the circumstanses surrounding your signing
+        of the Treaty."'
+      sprite: 0
+    - name: Pamela
+      line: '"Oh? Tell your king that the apology is not accepted. Now Leave."'
+      sprite: 0
+    type: 0
+    branches:
+    - No.
+    - Understood.
+    - But we have more to discuss.
+    branchDialogues: 120000001100000010000000
+    relationshipChanges: 000000000000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: I'm here to show you a good time.
+      sprite: 0
+    - name: Pamela.
+      line: Oh. Just another sacrifice then. Well, fortunately for you, I am not permitted
+        to kill during the Treaty period, so you may go now.
+      sprite: 0
+    type: 2
+    branches:
+    - But we have more to discuss.
+    - No.
+    - Understood.
+    branchDialogues: 100000001200000011000000
+    relationshipChanges: 000000000000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: 'The King believes that your heart may not have been in it when you signed
+        the Treaty. It is my duty to change that: through courtship.'
+      sprite: 0
+    - name: Pamela
+      line: So, you are here to court me for the sake of your kingdom's continued
+        safety? Why should I even go along with that?
+      sprite: 0
+    type: 0
+    branches:
+    - You have nice penmanship.
+    - You'll die otherwise.
+    - It'll save lives.
+    branchDialogues: 0d0000000f0000000e000000
+    relationshipChanges: 0a0000000a00000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: You cannot win this war alone. If you join us, we can guarentee your continued
+        safety.
+      sprite: 0
+    - name: Pamela
+      line: Oh? Hm. I will have to think avout that. You may leave now.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: You cannot win this war alone. Join us, or the literal forcing of your
+        hand will be the least of your troubles.
+      sprite: 0
+    - name: Pamela
+      line: You have got some gall boy. ... Fine. If that is how it is, I will consider
+        it. Begone.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Because it would be a shame to lose someone with such lovely penmanship.
+      sprite: 0
+    - name: Pamela
+      line: 'I...
+
+        Umm...
+
+        Oh...
+
+        Well... please just go, I....
+
+        please.'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Because we'd be saving a lot of lives, on your side and ours.
+      sprite: 0
+    - name: Pamela
+      line: '"Lives? Pft. I really do not care, and you can tell your king that for
+        this farce, he will be the first one to die when the treaty ends. Now leave.'
+      sprite: 0
+    type: 0
+    branches:
+    - No.
+    - Understood.
+    - But we still have more to discuss.
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Otherwise, we'd have to kill you.
+      sprite: 0
+    - name: Pamela
+      line: Ha ha ha ha ha ha ha ha! Nice try, get out of here.
+      sprite: 0
+    type: 0
+    branches:
+    - Understood
+    - No
+    - But we have more to discuss
+    branchDialogues: 000000000000000000000000
+    relationshipChanges: 000000000000000000000000
+  - lines:
+    - name: '|*CHAR*|'
+      line: But we have more to discuss...
+      sprite: 0
+    - name: Pamela
+      line: '"Like what?"'
+      sprite: 0
+    type: 0
+    branches:
+    - The Treaty?
+    - Nothing, nevermind.
+    - You have nice penmanship.
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Understood.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*CHAR*|'
+      line: Hey, you can't tell me what to do!
+      sprite: 0
+    - name: Pamela
+      line: I said go!
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  read: 
   faceSprites: []
+  firstKillIndex: 0
+  hateDialogueIndices: 
+  neutralDialogueIndices: 00000000
+  likedDialogueIndices: 
+  giftDialogueIndices: 
   relationship: -100
   met: 0
+  deaths:
+  - Pamela claps your skull as though she were swatting a fly out of the air.
+  - Pamela gouges your eyes like a blind person trying to read your mind.
+  - 'Pamela gives you a lovely plate of ribs: YOUR RIBS, that is.'
+  - Pamela turns your entire body into a shoulder-length glove.
+  - Pamela turns you into a piece of modern art on her wall in a single punch.
+  - Pamela squeezes you like a near-empty tube of toothpaste.
+  - Pamela neatly stores your arm bones, leg bones, and skull in your torso.
+  - Pamela removes your spine. It was holding you back, anyway.
+  - Pamela plays a game of Whack the Stack with your spine.
+  - "Pamela does something that ends in your death, but you don\u2019t know what."
+  - "Pamela stomps you like the \u201CI\u201D in Pixar."
+  - Pamela compacts your body like a frat boy compacting an empty beer can.
+  - Pamela gives you a lovely neck pillow made from your lungs.
+  - Pamela tries to do the Vulcan Neck Pinch, but accidentally rips your head off.
+  - Pamela flicks the head off of a flower; that flower being you.
+  - Pamela gives you a heart attack; by grabbing it until it stopped beating.
+  - Pamela lets you leave her home alive. NOT!
+  - Pamela punches out your blood. She punches out ALL of your blood.
+  - Pamela slits your throat with your own shoulder blades.
+  - Pamela gets you in a Guillotine Hold, then chops your head off with her free hand.
+  gGiftsReceived: 000000000000000000000000
