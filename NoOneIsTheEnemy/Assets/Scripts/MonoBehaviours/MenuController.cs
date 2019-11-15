@@ -165,6 +165,12 @@ public class MenuController : MonoBehaviour
             }
         }
 
+        InputField[] inputs = GetComponentsInChildren<InputField>();
+        if (inputs.Length > 0)
+        {
+            Destroy(loadPanel.GetComponentInChildren<InputField>().gameObject);
+        }
+
         foreach (Button button in menuButtons)
         {
             button.interactable = true;
