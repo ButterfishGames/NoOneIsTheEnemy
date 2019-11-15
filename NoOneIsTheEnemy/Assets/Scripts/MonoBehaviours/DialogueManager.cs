@@ -122,7 +122,10 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        currentCharacter.met = true;
+        if (currentCharacter != null)
+        {
+            currentCharacter.met = true;
+        }
 
         if (currentCharacter.relationship <= -150 && !dying)
         {
