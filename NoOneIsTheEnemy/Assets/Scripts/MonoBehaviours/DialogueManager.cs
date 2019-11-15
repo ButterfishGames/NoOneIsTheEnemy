@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
 
         sentences = new Queue<string>();
         names = new Queue<string>();
+        sprites = new Queue<int>();
 
         currentCharacter = null;
         currentDialogue = null;
@@ -60,6 +61,7 @@ public class DialogueManager : MonoBehaviour
         isBranched = false;
         sentences.Clear();
         names.Clear();
+        sprites.Clear();
 
         charSprite = GameObject.Find("Char").GetComponent<SpriteRenderer>();
 
