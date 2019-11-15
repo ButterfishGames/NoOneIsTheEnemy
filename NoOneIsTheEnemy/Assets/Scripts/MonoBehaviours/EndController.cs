@@ -21,6 +21,10 @@ public class EndController : MonoBehaviour
             endText.text = message;
             finished = true;
         }
+        else if (!finished)
+        {
+
+        }
 
         if (Input.GetButtonUp("Submit"))
         {

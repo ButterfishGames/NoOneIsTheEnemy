@@ -9,9 +9,11 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager singleton;
 
     public GameObject branchButtonPrefab;
+    private SpriteRenderer charSprite;
 
     private Queue<string> sentences;
     private Queue<string> names;
+    private Queue<int> sprites;
 
     public Character currentCharacter;
     private Dialogue currentDialogue;
@@ -59,6 +61,8 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         names.Clear();
 
+        charSprite = GameObject.Find("Char").GetComponent<SpriteRenderer>();
+
         GameObject branchPanel = GameObject.Find("BranchPanel");
         Button[] buttons = branchPanel.GetComponentsInChildren<Button>();
         foreach (Button button in buttons)
@@ -70,6 +74,7 @@ public class DialogueManager : MonoBehaviour
         {
             names.Enqueue(line.name);
             sentences.Enqueue(line.line);
+            sprites.Enqueue(line.sprite);
         }
 
         currentCharacter = character;
@@ -95,6 +100,11 @@ public class DialogueManager : MonoBehaviour
 
         string name = DialogueProcessor(names.Dequeue());
         string line = DialogueProcessor(sentences.Dequeue());
+
+        if (currentCharacter != null)
+        {
+            charSprite.sprite = currentCharacter.faceSprites[sprites.Dequeue()];
+        }
 
         GameObject.Find("NameText").GetComponent<Text>().text = name;
         GameObject.Find("LineText").GetComponent<Text>().text = line;

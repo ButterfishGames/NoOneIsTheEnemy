@@ -3069,7 +3069,7 @@ GameObject:
   - component: {fileID: 2121661879}
   - component: {fileID: 2121661878}
   m_Layer: 0
-  m_Name: Chi
+  m_Name: Char
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
