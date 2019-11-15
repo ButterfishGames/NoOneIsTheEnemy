@@ -26,6 +26,15 @@ public class Character : ScriptableObject
     [Tooltip("Array of expression sprites. (Could only contain one)")]
     public Sprite[] faceSprites;
 
+    [Tooltip("The index of the first kill dialogue. All kill dialogues should be at the end of the list")]
+    public int firstKillIndex;
+
+    [Tooltip("An array of indices of hate dialogues in the dialogues array")]
+    public int[] hateDialogueIndices;
+
+    [Tooltip("An array of indices of neutral dialogues in the dialogues array")]
+    public int[] neutralDialogueIndices;
+
     public int relationship;
 
     public bool met;
@@ -54,6 +63,10 @@ public class Character : ScriptableObject
         {
             dIndex = 0;
         }
+        else if (relationship < -60)
+        {
+            dIndex = hateDialogueIndices[Random.Range(0, hateDialogueIndices.Length)];
+        }
 
         read[dIndex] = true;
         DialogueManager.singleton.StartDialogue(this, dialogues[dIndex]);
@@ -73,6 +86,6 @@ public class Character : ScriptableObject
 
     public void Love()
     {
-
+        StartDialogue(1, 0);
     }
 }

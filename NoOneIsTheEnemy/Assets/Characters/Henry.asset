@@ -31,34 +31,68 @@ MonoBehaviour:
     branchDialogues: 0500000006000000
     relationshipChanges: 0a000000f6ffffff
   - lines:
-    - name: ???
-      line: Oh for ****'s sake, another bloody hero.
+    - name: Henry
+      line: '.................'
+      sprite: 0
+    - name: Henry
+      line: '.................
+
+        Okay.'
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: Okay?
+      sprite: 0
+    - name: Henry
+      line: You convinced me. I must be outta my mind -- even more than usual, heh
+        -- but I'm willin' to sign this... peace agreement or what have you.
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: What made you change your mind?
+      sprite: 0
+    - name: Henry
+      line: I couldn't tell you why for the life'a me, but I've taken a bit of a liking
+        to you. An' I don't like anyone, mind. So for the sake of friendship, or whatever
+        this is... I'm willing to make that sacrifice.
       sprite: 0
     type: 0
+    branches:
+    - So... we're friends now?
+    - Let's go on a date.
+    branchDialogues: 0b0000000c000000
+    relationshipChanges: 0000000000000000
+  - lines:
+    - name: 
+      line: 'It looks like he''s run out of patience to deal with you.
+
+
+        (You have run out of dialogues for this relationship range. You might want
+        to try giving him gifts.)'
+      sprite: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
-    - name: ???
-      line: Oh for ****'s sake, another bloody hero.
+    - name: 
+      line: 'Henry is utterly bored of talking to you.
+
+
+        (You have run out of dialogues for this relationship range. You might want
+        to try giving him gifts.)'
       sprite: 0
-    type: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
-    - name: ???
-      line: Oh for ****'s sake, another bloody hero.
+    - name: 
+      line: 'Henry is trying, but just can''t think of anything new to say.
+
+
+        (You have run out of dialogues for this relationship range. You might want
+        to try giving him gifts.)'
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: ???
-      line: Oh for ****'s sake, another bloody hero.
-      sprite: 0
-    type: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
@@ -141,6 +175,48 @@ MonoBehaviour:
     branches: []
     branchDialogues: 
     relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: So... We're friends now?
+      sprite: 0
+    - name: Henry
+      line: Not somethin' I'm used to, really. But, heh... we'll make it work.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Let's go on a date.
+      sprite: 0
+    - name: Henry
+      line: Heh? Okay.
+      sprite: 0
+    - name: Henry
+      line: You're pretty strange for a hero, you know that?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Let's go on a date.
+      sprite: 0
+    - name: Henry
+      line: Heh? Okay.
+      sprite: 0
+    - name: Henry
+      line: You're pretty strange for a hero, you know that?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  read: 0000000000000000000000000000
   faceSprites: []
+  firstKillIndex: 0
+  hateDialogueIndices: 0d000000
   relationship: -100
-  met: 1
+  met: 0

@@ -144,6 +144,8 @@ public class GameController : MonoBehaviour
 
     public void NewGame(int num)
     {
+        playerName = FindObjectOfType<MenuController>().nameInput.text;
+
         fileNum = num;
         day = 0;
         LoadScene(mapScene);

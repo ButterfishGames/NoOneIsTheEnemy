@@ -11,13 +11,35 @@ public class MenuController : MonoBehaviour
     public int numSaves;
 
     public GameObject fileButtonPrefab;
+    public GameObject inputFieldPrefab;
 
     public GameObject loadPanel;
     public GameObject storyPanel;
 
+    public InputField nameInput;
+
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(GameObject.Find("NewGameButton"));
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonUp("Cancel"))
+        {
+            if (loadPanel.activeInHierarchy)
+            {
+                CloseLoadPanel();
+            }
+            else if (storyPanel.activeInHierarchy)
+            {
+                CloseStoryPanel();
+            }
+            else
+            {
+                Quit();
+            }
+        }
     }
 
     public void NewGame()
@@ -28,6 +50,7 @@ public class MenuController : MonoBehaviour
         }
         loadPanel.SetActive(true);
 
+        nameInput = Instantiate(inputFieldPrefab, loadPanel.transform).GetComponent<InputField>();
         for (int i = 0; i < numSaves; i++)
         {
             GameObject button = Instantiate(fileButtonPrefab, loadPanel.transform);
