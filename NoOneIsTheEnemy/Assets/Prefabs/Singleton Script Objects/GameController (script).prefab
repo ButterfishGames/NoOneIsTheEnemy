@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapScene: 1
-  endScene: 4
-  shopScene: 3
+  endScene: 5
+  shopScene: 4
   dailyEnergy: 5
   paycheck: 100
   fadeTime: 1
@@ -230,7 +230,8 @@ MonoBehaviour:
   day: 0
   characters:
   - {fileID: 11400000, guid: afb1efe2068f02843a57ff7976d5255a, type: 2}
-  characterScenes: 02000000
+  - {fileID: 11400000, guid: a11344336394f9a4fb3f1726cfb4d1e3, type: 2}
+  characterScenes: 0200000003000000
   loading: 0
   dead: 0
   bigGiftsPurchased: 

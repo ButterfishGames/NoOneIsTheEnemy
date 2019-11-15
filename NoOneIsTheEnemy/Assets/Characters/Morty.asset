@@ -556,8 +556,17 @@ MonoBehaviour:
     branches: []
     branchDialogues: 
     relationshipChanges: 
-  read: 
-  faceSprites: []
+  read: 01000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  faceSprites:
+  - {fileID: 21300000, guid: 90e86563f1032de44af3d0e800e990a2, type: 3}
+  - {fileID: 21300000, guid: 4f768b3a13ae9804aba832e87aa2392e, type: 3}
+  - {fileID: 21300000, guid: d44110100ac77504d8f20ccf3d2c0fa9, type: 3}
+  - {fileID: 21300000, guid: 49347017144b60c4db59149fb173074d, type: 3}
+  - {fileID: 21300000, guid: a5a05821dae8e6b49bba1f1573aa2f24, type: 3}
+  - {fileID: 21300000, guid: 47f9281391f83d7449da630c3d6cf0ba, type: 3}
+  - {fileID: 21300000, guid: 93af61f637044af4284e39706a19e3e8, type: 3}
+  - {fileID: 21300000, guid: f44aaa3a3432c95428c7fb9904eefc00, type: 3}
+  - {fileID: 21300000, guid: adb0a39e4d1458a4393222f07d04da95, type: 3}
   firstKillIndex: 42
   hateDialogueIndices: 0f00000012000000
   neutralDialogueIndices: 150000001a0000001d000000
