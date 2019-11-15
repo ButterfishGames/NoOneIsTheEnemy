@@ -9,6 +9,7 @@ public class MapController : MonoBehaviour
     public Image dayUI, energyUI;
     public Sprite daySprite, nightSprite;
     public Sprite[] energySprites;
+    public GameObject cantWorkPanel;
 
     public void UpdateUI()
     {
@@ -31,5 +32,22 @@ public class MapController : MonoBehaviour
     {
         GameController.singleton.energy--; // If not shop scene
         GameController.singleton.LoadScene(sceneIndex);
+    }
+
+    public void Work()
+    {
+        if (GameController.singleton.energy >= 2)
+        {
+            GameController.singleton.Work();
+        }
+        else
+        {
+            cantWorkPanel.SetActive(true);
+        }
+    }
+
+    public void CloseCantWork()
+    {
+        cantWorkPanel.SetActive(false);
     }
 }

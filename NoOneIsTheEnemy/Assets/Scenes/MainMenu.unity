@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 193959278}
   - component: {fileID: 193959277}
   - component: {fileID: 193959280}
+  - component: {fileID: 193959281}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -352,6 +353,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &193959281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193959275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afc686f2244a44188719c0acc598ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221868601
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +378,7 @@ GameObject:
   - component: {fileID: 221868604}
   - component: {fileID: 221868603}
   - component: {fileID: 221868606}
+  - component: {fileID: 221868607}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -505,6 +519,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &221868607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221868601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afc686f2244a44188719c0acc598ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266538937
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +830,7 @@ GameObject:
   - component: {fileID: 613665212}
   - component: {fileID: 613665211}
   - component: {fileID: 613665214}
+  - component: {fileID: 613665215}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -944,6 +971,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &613665215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613665209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afc686f2244a44188719c0acc598ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825007585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2167,7 @@ GameObject:
   - component: {fileID: 1826357675}
   - component: {fileID: 1826357674}
   - component: {fileID: 1826357677}
+  - component: {fileID: 1826357678}
   m_Layer: 5
   m_Name: StoryButton
   m_TagString: Untagged
@@ -2268,6 +2308,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1826357678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826357672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afc686f2244a44188719c0acc598ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1904661405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,7 +2349,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4c72b35458666134f8a599af93cc45c1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0

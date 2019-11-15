@@ -11,7 +11,10 @@ public class GameController : MonoBehaviour
     public static GameController singleton;
 
     public int mapScene;
+    public int endScene;
+
     public int dailyEnergy;
+    public int paycheck;
     public float fadeTime;
 
     public int fileNum;
@@ -25,6 +28,7 @@ public class GameController : MonoBehaviour
     private Image fadeImg;
 
     public bool loading;
+    public bool dead;
 
     private SaveData save;
 
@@ -155,5 +159,12 @@ public class GameController : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Work()
+    {
+        energy -= 2;
+        money += paycheck;
+        LoadScene(mapScene);
     }
 }

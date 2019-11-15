@@ -42,6 +42,9 @@ public class Character : ScriptableObject
 
     public bool met;
 
+    [TextArea(3, 10)]
+    public string[] deaths;
+
     private void OnEnable()
     {
         read = new bool[dialogues.Length];
@@ -68,15 +71,63 @@ public class Character : ScriptableObject
         }
         else if (relationship < -60)
         {
-            dIndex = hateDialogueIndices[Random.Range(0, hateDialogueIndices.Length)];
+            List<int> unreadHate = new List<int>();
+            foreach(int index in hateDialogueIndices)
+            {
+                if (!read[index])
+                {
+                    unreadHate.Add(index);
+                }
+            }
+
+            if (unreadHate.ToArray().Length > 0)
+            {
+                dIndex = unreadHate[Random.Range(0, unreadHate.ToArray().Length)];
+            }
+            else
+            {
+                dIndex = 2;
+            }
         }
         else if (relationship < 10)
         {
-            dIndex = neutralDialogueIndices[Random.Range(0, neutralDialogueIndices.Length)];
+            List<int> unreadNeutral = new List<int>();
+            foreach(int index in neutralDialogueIndices)
+            {
+                if (!read[index])
+                {
+                    unreadNeutral.Add(index);
+                }
+            }
+
+            if (unreadNeutral.ToArray().Length > 0)
+            {
+                dIndex = unreadNeutral[Random.Range(0, unreadNeutral.ToArray().Length)];
+            }
+            else
+            {
+                dIndex = 3;
+            }
         }
         else
         {
-            dIndex = likedDialogueIndices[Random.Range(0, likedDialogueIndices.Length)];
+            List<int> unreadLiked = new List<int>();
+            foreach(int index in likedDialogueIndices)
+            {
+                if (!read[index])
+                {
+                    unreadLiked.Add(index);
+                }
+            }
+
+            if (unreadLiked.ToArray().Length > 0)
+            {
+                dIndex = unreadLiked[Random.Range(0, unreadLiked.ToArray().Length)];
+            }
+            else
+            {
+                dIndex = 4;
+            }
         }
 
         read[dIndex] = true;

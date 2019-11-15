@@ -38,5 +38,6 @@ public struct DialogueLine
 public enum DialogueType
 {
     branch,
-    end
+    end,
+    kill
 }

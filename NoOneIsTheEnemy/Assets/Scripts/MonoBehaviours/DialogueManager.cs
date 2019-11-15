@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private Queue<string> names;
 
-    private Character currentCharacter;
+    public Character currentCharacter;
     private Dialogue currentDialogue;
 
     private bool primed;
@@ -145,6 +145,11 @@ public class DialogueManager : MonoBehaviour
                         EventSystem.current.SetSelectedGameObject(branchButton);
                     }
                 }
+                break;
+
+            case DialogueType.kill:
+                GameController.singleton.dead = true;
+                GameController.singleton.LoadScene(GameController.singleton.endScene);
                 break;
 
             default:

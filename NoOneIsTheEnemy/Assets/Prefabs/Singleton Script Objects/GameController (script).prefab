@@ -218,13 +218,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapScene: 1
+  endScene: 3
   dailyEnergy: 5
+  paycheck: 100
   fadeTime: 1
   fileNum: 0
   playerName: Fabio
   money: 0
-  energy: 0
+  energy: 5
   day: 0
   characters:
-  - {fileID: 11400000, guid: d02d1b75bef2c40419f7b80ae153d395, type: 2}
+  - {fileID: 11400000, guid: afb1efe2068f02843a57ff7976d5255a, type: 2}
   loading: 0
+  dead: 0

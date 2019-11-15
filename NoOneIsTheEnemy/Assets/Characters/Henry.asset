@@ -361,7 +361,7 @@ MonoBehaviour:
     type: 0
     branches:
     - I hope you're not planning on killing
-    - What makes human hearts so special?
+    - What makes human hearts special?
     branchDialogues: 1b0000001c000000
     relationshipChanges: f6ffffff00000000
   - lines:
@@ -585,10 +585,67 @@ MonoBehaviour:
     branchDialogues: 
     relationshipChanges: 
   - lines:
+    - name: '|*PLAYER*|'
+      line: Peacefully in my sleep, I guess?
+      sprite: 0
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Hahahahaha! Oh, that's adorable! Sorry, hero, but the 'peaceful' death
+        is a myth. Most people who die in the night are actually woken up by the immense
+        pain of going into cardiac arrest. Have fun sleeping tonight!
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Are you going to kill me, Henry?
+      sprite: 0
+    - name: Henry
+      line: Nah.
       sprite: 0
     type: 0
+    branches:
+    - I'm still not answering.
+    - I guess I'd just want it to happen quickly.
+    - I think I want to live forever.
+    branchDialogues: 2f0000003000000031000000
+    relationshipChanges: f6ffffff140000001e000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I'm still not answering.
+      sprite: 0
+    - name: Henry
+      line: Oh, that's no fun. Trust me or don't, but at least make conversation!
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I guess I'd just want it to happen quickly.
+      sprite: 0
+    - name: Henry
+      line: Ooh, I could do that for you! Only with your permission, that is. One
+        day. I promise!
+      sprite: 0
+    - name: Henry
+      line: '...Incidentally, did you know that the most painless known way to die
+        is by beheading? Easy to perform, too~'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I think I want to live forever.
+      sprite: 0
+    - name: Henry
+      line: Ooh, I might be able to arrange that~
+      sprite: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
@@ -618,49 +675,45 @@ MonoBehaviour:
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Hahahahahahahahahahahahaha~~
       sprite: 0
-    type: 0
-    branches: []
+    type: 2
+    branches:
+    - 
     branchDialogues: 
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: '...'
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Hey.
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: I've got somethin' for ya.
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Come closer.
+      sprite: 0
+    - name: 
+      line: Henry holds out a strange device.
       sprite: 0
     type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  read: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    branches:
+    - Take it.
+    branchDialogues: 35000000
+    relationshipChanges: 00000000
+  read: 01000000000100010000000000000000010000010000000000000100000000000000000000000000000000000000000000000000000000
   faceSprites: []
-  firstKillIndex: 0
+  firstKillIndex: 54
   hateDialogueIndices: 0d00000010000000
   neutralDialogueIndices: 140000001a000000
   likedDialogueIndices: 21000000280000002b000000
-  relationship: -100
-  met: 0
+  relationship: -60
+  met: 1
+  deaths:
+  - "As you hold up Henry's \"gift\" to try and determine what it might be, you are
+    suddenly hit with an overwhelming, suffocating smell of flowers. It fills your
+    lungs and doesn't leave, even as you drop to the ground in a violent coughing
+    fit. The last thing you're aware of as you lose consciousness is Henry's maniacal
+    laughter.\r\n\r\nYou never wake up."
