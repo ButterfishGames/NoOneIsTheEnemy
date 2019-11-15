@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool primed;
     private bool isBranched;
+    public bool dying;
 
     // Start is called before the first frame update
     private void Start()
@@ -40,6 +41,8 @@ public class DialogueManager : MonoBehaviour
 
         currentCharacter = null;
         currentDialogue = null;
+
+        dying = false;
     }
 
     private void Update()
@@ -121,17 +124,24 @@ public class DialogueManager : MonoBehaviour
     {
         currentCharacter.met = true;
 
-        if (currentCharacter.relationship <= -150)
+        if (currentCharacter.relationship <= -150 && !dying)
         {
             currentCharacter.Kill();
+            return;
         }
 
         switch (currentDialogue.type)
         {
             case DialogueType.end:
+                if (dying)
+                {
+                    currentCharacter.Kill();
+                    return;
+                }
                 if (currentCharacter != null && currentCharacter.relationship >= 100)
                 {
                     currentCharacter.Love();
+                    return;
                 }
                 else
                 {
