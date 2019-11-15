@@ -385,7 +385,7 @@ MonoBehaviour:
         to an extent after death--major organs have more of this property than anythin'
         else. Brains're ideal, actually, but a whole one is tough to find and they're
         more useful in general if broken up and used for other recipes...
-      sprite: 0
+      sprite: 3
     type: 0
     branches:
     - Can't you just use elk hearts or something?
@@ -395,12 +395,12 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: Can't you just use elk hearts or something?
-      sprite: 0
+      sprite: 3
     - name: Henry
       line: Argh, I shoulda known you wouldn't get it. Listen ********, do you really
         think you know how t' do my job be'er than I do!? Keep yer vegan-arse bull****
         to yer damn self, why don't you?
-      sprite: 0
+      sprite: 5
     type: 0
     branches:
     - W-wouldn't a vegan be against killing elk?
@@ -410,14 +410,14 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: What kind of impression?
-      sprite: 0
+      sprite: 3
     - name: Henry
       line: Well ya see...
-      sprite: 0
+      sprite: 1
     - name: 
       line: Henry happily rants about alchemical components and the various uses thereof
         for the next hour. You zone out, but he seems content with that.
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -428,7 +428,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Oh my bloody gods. I. Don't. Care!
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -436,10 +436,10 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: '.....'
-      sprite: 0
+      sprite: 4
     - name: Henry
       line: That's what I thought.
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -447,7 +447,7 @@ MonoBehaviour:
   - lines:
     - name: Henry
       line: So... What do you... do for fun?
-      sprite: 0
+      sprite: 2
     type: 0
     branches:
     - I collect things.
@@ -458,10 +458,10 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: I collect things.
-      sprite: 0
+      sprite: 2
     - name: Henry
       line: What things?
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - Swords.
@@ -475,10 +475,10 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Did you just say...
-      sprite: 0
+      sprite: 1
     - name: Henry
       line: Did you just say... science stuff??
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -489,7 +489,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Hey, ya wanna see a dead body?
-      sprite: 0
+      sprite: 4
     type: 1
     branches: []
     branchDialogues: 
@@ -497,11 +497,11 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: Swords.
-      sprite: 0
+      sprite: 6
     - name: Henry
       line: Well that's... interesting, actually. I suppose you see them as more than
         just tools for killing then, don't you?
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -512,7 +512,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: What.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -520,10 +520,10 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: Lovers. (wink)
-      sprite: 0
+      sprite: 5
     - name: 
       line: Henry gives you an utterly confounded look.
-      sprite: 0
+      sprite: 6
     type: 1
     branches: []
     branchDialogues: 
@@ -532,7 +532,7 @@ MonoBehaviour:
     - name: Henry
       line: What are your favorite, uh... bloody ****, I don't know. What's your favorite
         type of natural disaster?
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - You really aren't used to talking to people, huh?
@@ -542,11 +542,11 @@ MonoBehaviour:
   - lines:
     - name: '|*PLAYER*|'
       line: Wow, you really aren't used to talking to people, huh?
-      sprite: 0
+      sprite: 2
     - name: Henry
       line: No, I'm not. I'm actually an antisocial ******** with no interpersonal
         skills, but thanks for pointing that out. ****.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -557,7 +557,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Hmm, interesting. I never would've thought of "pretty" as a factor.
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -565,7 +565,7 @@ MonoBehaviour:
   - lines:
     - name: Henry
       line: How would you say is your ideal way to die?
-      sprite: 0
+      sprite: 1
     type: 0
     branches:
     - Heroically in battle.
@@ -579,7 +579,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Ugh, I don't know what I expected.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -592,7 +592,7 @@ MonoBehaviour:
       line: Hahahahaha! Oh, that's adorable! Sorry, hero, but the 'peaceful' death
         is a myth. Most people who die in the night are actually woken up by the immense
         pain of going into cardiac arrest. Have fun sleeping tonight!
-      sprite: 0
+      sprite: 7
     type: 1
     branches: []
     branchDialogues: 
@@ -603,7 +603,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Nah.
-      sprite: 0
+      sprite: 7
     type: 0
     branches:
     - I'm still not answering.
@@ -617,7 +617,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Oh, that's no fun. Trust me or don't, but at least make conversation!
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -629,11 +629,11 @@ MonoBehaviour:
     - name: Henry
       line: Ooh, I could do that for you! Only with your permission, that is. One
         day. I promise!
-      sprite: 0
+      sprite: 4
     - name: Henry
       line: '...Incidentally, did you know that the most painless known way to die
         is by beheading? Easy to perform, too~'
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -644,7 +644,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Ooh, I might be able to arrange that~
-      sprite: 0
+      sprite: 3
     type: 1
     branches: []
     branchDialogues: 
@@ -652,7 +652,7 @@ MonoBehaviour:
   - lines:
     - name: Henry
       line: Eh? Some kinda peace offerin'? I'll take it, I s'pose.
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -663,7 +663,7 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Well ****, this could actually be useful...
-      sprite: 0
+      sprite: 1
     type: 1
     branches: []
     branchDialogues: 
@@ -674,7 +674,7 @@ MonoBehaviour:
         for my work? "Oh sure I'll just give him this random **** I found, he can
         just throw it in a potion with some eyes of newt and it'll prob'ly do somethin'!"
         **** off.
-      sprite: 0
+      sprite: 5
     type: 1
     branches: []
     branchDialogues: 
@@ -682,7 +682,7 @@ MonoBehaviour:
   - lines:
     - name: Henry
       line: Hahahahahahahahahahahahaha~~
-      sprite: 0
+      sprite: 4
     type: 2
     branches:
     - 
@@ -694,22 +694,22 @@ MonoBehaviour:
       sprite: 0
     - name: Henry
       line: Hey.
-      sprite: 0
+      sprite: 1
     - name: Henry
       line: I've got somethin' for ya.
-      sprite: 0
+      sprite: 3
     - name: Henry
       line: Come closer.
-      sprite: 0
+      sprite: 3
     - name: 
       line: Henry holds out a strange device.
-      sprite: 0
+      sprite: 7
     type: 0
     branches:
     - Take it.
     branchDialogues: 35000000
     relationshipChanges: 00000000
-  read: 01000000000100010000000000010100000000000000000000000000000000000000000000000000000000000000000000000000000000
+  read: 01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   faceSprites:
   - {fileID: 21300000, guid: d74af556dcc7717408fd618ce8e7470c, type: 3}
   - {fileID: 21300000, guid: c8072cc21849df944ab8f5da631b60a2, type: 3}
@@ -724,8 +724,8 @@ MonoBehaviour:
   neutralDialogueIndices: 140000001a000000
   likedDialogueIndices: 21000000280000002b000000
   giftDialogueIndices: 320000003300000034000000
-  relationship: -90
-  met: 1
+  relationship: -100
+  met: 0
   deaths:
   - "As you hold up Henry's \"gift\" to try and determine what it might be, you are
     suddenly hit with an overwhelming, suffocating smell of flowers. It fills your
