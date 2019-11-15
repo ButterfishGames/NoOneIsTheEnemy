@@ -201,22 +201,421 @@ MonoBehaviour:
     branchDialogues: 
     relationshipChanges: 
   - lines:
+    - name: Henry
+      line: '**** off.'
+      sprite: 0
+    type: 0
+    branches:
+    - Not until you like me!
+    - Look man, I'm just trying to do my job.
+    branchDialogues: 0e0000000f000000
+    relationshipChanges: f6ffffff14000000
+  - lines:
     - name: '|*PLAYER*|'
-      line: Let's go on a date.
+      line: Not until you like me!
       sprite: 0
     - name: Henry
-      line: Heh? Okay.
-      sprite: 0
-    - name: Henry
-      line: You're pretty strange for a hero, you know that?
+      line: '***** ****, are all heroes this ******* clingy!?'
       sprite: 0
     type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
-  read: 0000000000000000000000000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Look, man, I'm just trying to do my job.
+      sprite: 0
+    - name: Henry
+      line: (sigh) Fine. Gimme yer spiel and let me get on with my damn day.
+      sprite: 0
+    type: 1
+    branches:
+    - Not until you like me!
+    - Look man, I'm just trying to do my job.
+    branchDialogues: 0e0000000f000000
+    relationshipChanges: f6ffffff14000000
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches:
+    - Sure.
+    - What??
+    - I'm not falling for that one.
+    branchDialogues: 110000001200000013000000
+    relationshipChanges: 00000000f6ffffff14000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Sure.
+      sprite: 0
+    - name: Henry
+      line: Wow. Ya really are desperate for a signature, aren'cha?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: What??
+      sprite: 0
+    - name: Henry
+      line: Aww, what's the matter, love? Is the brave little soldier afraid? Come
+        on, you've killed plenty of us before; what's the difference?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I'm not falling for that one.
+      sprite: 0
+    - name: Henry
+      line: Hah! Yer smarter than ya look.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Why do you wanna end this war, anyway?
+      sprite: 0
+    type: 0
+    branches:
+    - What do you mean?
+    - Because I don't want to hurt you.
+    branchDialogues: 1500000016000000
+    relationshipChanges: 000000000a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: What do you mean?
+      sprite: 0
+    - name: Henry
+      line: Whaddya bloody think I mean!? Why choose peace when you could just kill
+        us all?? I mean you're not exactly the kind of *****-arse ***** we could easily
+        crush. Ya had a fightin' chance.
+      sprite: 0
+    type: 0
+    branches:
+    - Real heroes choose peace.
+    - I don't want innocents getting hurt.
+    - If I killed you, I couldn't talk to you.
+    branchDialogues: 170000001800000019000000
+    relationshipChanges: e2ffffff0000000014000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Because I don't want to hurt you.
+      sprite: 0
+    - name: Henry
+      line: '...Hmph'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Real heroes choose peace.
+      sprite: 0
+    - name: Henry
+      line: Oh **** off ya pretentious ****.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I don't want innocent people getting hurt.
+      sprite: 0
+    - name: Henry
+      line: Sentimental bull****. Ya didn't join the military on the off-chance ya
+        could have tea and biscuits with some villains.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Well if I killed you, I couldn't exactly talk to you, could I?
+      sprite: 0
+    - name: Henry
+      line: '.................'
+      sprite: 0
+    - name: Henry
+      line: Interestin'...
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: I'm workin' on somethin' right now. Just need a few more human hearts
+        to make the last component.
+      sprite: 0
+    type: 0
+    branches:
+    - I hope you're not planning on killing
+    - What makes human hearts so special?
+    branchDialogues: 1b0000001c000000
+    relationshipChanges: f6ffffff00000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I hope you're not planning on killing for those.
+      sprite: 0
+    - name: Henry
+      line: What are you, my ******* mum? It's no business a yours where I find my
+        ******* ingredients.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: What makes human hearts so special?
+      sprite: 0
+    - name: Henry
+      line: Well, anythin' with a soul leaves an impression on its body that persists
+        to an extent after death--major organs have more of this property than anythin'
+        else. Brains're ideal, actually, but a whole one is tough to find and they're
+        more useful in general if broken up and used for other recipes...
+      sprite: 0
+    type: 0
+    branches:
+    - Can't you just use elk hearts or something?
+    - What kind of impression?
+    branchDialogues: 1d0000001e000000
+    relationshipChanges: ecffffff1e000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Can't you just use elk hearts or something?
+      sprite: 0
+    - name: Henry
+      line: Argh, I shoulda known you wouldn't get it. Listen ********, do you really
+        think you know how t' do my job be'er than I do!? Keep yer vegan-arse bull****
+        to yer damn self, why don't you?
+      sprite: 0
+    type: 0
+    branches:
+    - W-wouldn't a vegan be against killing elk?
+    - Remain silent
+    branchDialogues: 1f00000020000000
+    relationshipChanges: ecffffff0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: What kind of impression?
+      sprite: 0
+    - name: Henry
+      line: Well ya see...
+      sprite: 0
+    - name: 
+      line: Henry happily rants about alchemical components and the various uses thereof
+        for the next hour. You zone out, but he seems content with that.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: W-wouldn't a vegan be against killing elk?
+      sprite: 0
+    - name: Henry
+      line: Oh my bloody gods. I. Don't. Care!
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: '.....'
+      sprite: 0
+    - name: Henry
+      line: That's what I thought.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 0
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  read: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   faceSprites: []
   firstKillIndex: 0
-  hateDialogueIndices: 0d000000
+  hateDialogueIndices: 0d00000010000000
+  neutralDialogueIndices: 140000001a000000
   relationship: -100
   met: 0
