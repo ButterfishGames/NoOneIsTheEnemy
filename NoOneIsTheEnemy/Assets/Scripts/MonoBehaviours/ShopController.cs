@@ -52,4 +52,9 @@ public class ShopController : MonoBehaviour
         pGift.interactable = !GameController.singleton.bigGiftsPurchased[1];
         mGift.interactable = !GameController.singleton.bigGiftsPurchased[2];
     }
+
+    public void Leave()
+    {
+        GameController.singleton.LoadScene(GameController.singleton.mapScene);
+    }
 }

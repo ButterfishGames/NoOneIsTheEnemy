@@ -50,7 +50,7 @@ public class EndController : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonUp("Submit"))
+        if (Input.GetButtonUp("Submit") || Input.GetButtonUp("Mouse0"))
         {
             GameController.singleton.LoadScene(0);
         }
