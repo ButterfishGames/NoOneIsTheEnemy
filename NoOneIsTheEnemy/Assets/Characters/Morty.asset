@@ -19,15 +19,556 @@ MonoBehaviour:
   - their
   - theirs
   - themself
-  dialogues: []
+  dialogues:
+  - lines:
+    - name: Morty
+      line: (deep sigh) ... Yes?
+      sprite: 0
+    type: 0
+    branches:
+    - I'm looking for a necromancer...
+    - Are you, um, ok?
+    branchDialogues: 0500000006000000
+    relationshipChanges: 
+  - lines:
+    - name: Morty
+      line: Look, this isn't easy to admit. But... I may have been... wrong, about
+        some things.
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: What things?
+      sprite: 0
+    - name: Morty
+      line: I had this dream, of delivering a plague unto humanity that would make
+        them all mindless undead. I thought there was nothing to be gained from humans
+        having free will. But...
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: But?
+      sprite: 0
+    - name: Morty
+      line: But I've come to realize the self-centeredness of it all. My ideal is
+        not the only good in the world. In fact, the greatest evil that comes from
+        intelligence... is the blind justification of imposing one's will on the world
+        around them.
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: Huh?
+      sprite: 0
+    - name: 
+      line: They smile.
+      sprite: 0
+    - name: Morty
+      line: In other words, I've been doing the very thing I was trying to prevent.
+        Thank you, for helping me see that.
+      sprite: 0
+    type: 0
+    branches:
+    - (Friendship ending)
+    - (Romance ending)
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: 
+      line: 'Morty looks right through you.
+
+
+        (Out of dialogue for this affection range!)'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: 
+      line: 'Morty patiently ignores you.
+
+
+        (Out of dialogue for this affection range!)'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: 
+      line: 'Morty seems pensive.
+
+
+        (Out of dialogue for this affection range! You may want to try giving them
+        a gift.)'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I'm looking for a necromancer...
+      sprite: 0
+    - name: Morty
+      line: You've found one, but I suggest you keep looking.
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: But aren't you--
+      sprite: 0
+    - name: Morty
+      line: Listen here, paladin. I don't care about your mission. Tell your king
+        you were unsuccessful, let the war resume, and we won't have any more trouble.
+      sprite: 0
+    type: 0
+    branches:
+    - '..."paladin"?'
+    - Isn't a war more trouble than anything?
+    branchDialogues: 0700000008000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Are you, um, okay?
+      sprite: 0
+    - name: Morty
+      line: Are any of us okay?
+      sprite: 0
+    type: 0
+    branches:
+    - I don't... know how to respond to that.
+    - It's just that you look kind of ill.
+    branchDialogues: 090000000a000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PALADIN*|'
+      line: '..."paladin"?'
+      sprite: 0
+    - name: 
+      line: You try to coax more out of Morty, but they ignore you.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Isn't a war more trouble than anything?
+      sprite: 0
+    - name: Morty
+      line: Most of the time, yes. In this case, however, it was IMPERATIVE that our
+        factions remain hostile towards one another for the next two months, give
+        or take.
+      sprite: 0
+    type: 0
+    branches:
+    - That's insane.
+    - Why?
+    branchDialogues: 0b0000000c000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I don't... know how to respond to that.
+      sprite: 0
+    - name: Morty
+      line: Good. Don't.
+      sprite: 0
+    type: 0
+    branches:
+    - Um. Well, I'm here on behalf of--
+    - '......'
+    branchDialogues: 0d0000000e000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: It's just that you look kind of ill.
+      sprite: 0
+    - name: Morty
+      line: Thanks.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: That's insane.
+      sprite: 0
+    - name: Morty
+      line: Well, it certainly would seem as though your mission has failed, wouldn't
+        it? Clearly, there is no way for us to reach an agreement. We have completely
+        different goals, and the only way to settle them is to continue with the war.
+        Sorry to disappoint, but that's the way it has to be. Goodbye, paladin.
+      sprite: 0
+    - name: 
+      line: Morty is no longer looking at you, seemingly expecting you to leave.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: f6ffffff
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Why?
+      sprite: 0
+    - name: Morty
+      line: While I'm delighted that you're taking an interest, I am afraid I can't
+        disclose details to a representative of an enemy faction.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Um. Well, I'm here on behalf of--
+      sprite: 0
+    - name: Morty
+      line: 'Yes, yes, I am well aware. I''m going to be perfectly clear: I am not
+        signing your treaty, and neither will any of my associates. It would be in
+        your best interest to give up now and pretend this silly little cease-fire
+        never happened.'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: '......'
+      sprite: 0
+    - name: Morty
+      line: '......'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Morty
+      line: If it wouldn't cost me my funding, I would sic a small army of the undead
+        upon you.
+      sprite: 0
+    type: 0
+    branches:
+    - Wouldn't that be against your beliefs?
+    - Please don't.
+    branchDialogues: 1000000011000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Wouldn't that be against your beliefs?
+      sprite: 0
+    - name: Morty
+      line: Not at all.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Please don't.
+      sprite: 0
+    - name: Morty
+      line: Hmph.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 14000000
+  - lines:
+    - name: Morty
+      line: Still coming to me? After all the grief you've caused me? You must be
+        desperate.
+      sprite: 0
+    type: 0
+    branches:
+    - I don't know what else to do.
+    - No, I'm just determined!
+    branchDialogues: 1300000014000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I don't know what else to do.
+      sprite: 0
+    - name: Morty
+      line: Clearly.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: No, I'm just determined!
+      sprite: 0
+    - name: Morty
+      line: Determined to what? Manipulate me? //Teach// me some valuable lesson that
+        you think I'm just not getting? I'm done listening to you.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: ecffffff
+  - lines:
+    - name: Morty
+      line: Go home, paladin. Why are you still here?
+      sprite: 0
+    type: 0
+    branches:
+    - It's my job to convince you to sign the peace treaty.
+    - To keep people from dying in a senseless war?
+    branchDialogues: 1600000017000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: It's my job to convince you to sign the peace treaty.
+      sprite: 0
+    - name: Morty
+      line: Oh, of course. They send you because it's your //job// to obey orders,
+        so you can't be blamed. You're an innocent. They could never send one of their
+        own, because then we'd see how corrupt they really are.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: To keep people from dying in a senseless war?
+      sprite: 0
+    - name: Morty
+      line: Ugh. You really don't know your place, do you? It would almost be endearing
+        if your timing weren't so frustrating! You're trying so hard to end one war,
+        but if your people bothered listening to ME, I could end the senseless violence
+        for good!
+      sprite: 0
+    type: 0
+    branches:
+    - You really think so?
+    - That's what they all say...
+    branchDialogues: 1800000019000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: You really think so?
+      sprite: 0
+    - name: Morty
+      line: Well... yes. If someone is willing to give me a chance.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: That's what they all say...
+      sprite: 0
+    - name: Morty
+      line: Dismiss me if you wish. It won't make you a better person.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: ecffffff
+  - lines:
+    - name: Morty
+      line: Animals are strange, aren't they? It seems that the more intelligent the
+        species, the more cruelty it's capable of...
+      sprite: 0
+    type: 0
+    branches:
+    - I don't know about that; octopuses are pretty nice.
+    - It's like the dumb ones don't even think to be jerks.
+    branchDialogues: 1b0000001c000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I don't know about that; octopuses are pretty nice.
+      sprite: 0
+    - name: Morty
+      line: Have you ever MET an octopus?? I've read their minds; they're scheming
+        little bastards.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: e2ffffff
+  - lines:
+    - name: '|*PLAYER*|'
+      line: It's like the dumb ones don't even think to be jerks.
+      sprite: 0
+    - name: Morty
+      line: Hrmph. Exactly.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 14000000
+  - lines:
+    - name: Mortty
+      line: What do you think of necromancy, as a discipline?
+      sprite: 0
+    type: 0
+    branches:
+    - I'm terrified of it, honestly.
+    - Is this a trick question?
+    - Zombies are cute!
+    branchDialogues: 1e0000001f00000020000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I'm terrified of it, honestly.
+      sprite: 0
+    - name: Morty
+      line: You really don't need to be. Perhaps if you met some of my little friends,
+        you would see that they're nothing to fear.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Is this a trick question?
+      sprite: 0
+    - name: Morty
+      line: (beleaguered sigh) ...You're overthinking it, paladin.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: ecffffff
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Zombies are cute!
+      sprite: 0
+    - name: Morty
+      line: Heck yes they are.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 1e000000
+  - lines:
+    - name: Morty
+      line: If everyone were as innocent and unthinking as my precious undead friends,
+        there would be no strife, no cruelty in the world. Don't you agree?
+      sprite: 0
+    type: 0
+    branches:
+    - Yeah, free will is causing a lot of problems.
+    - But if I did whatever you said, we wouldn't be talking like this.
+    branchDialogues: 2200000023000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Yeah, free will is causing a lot of problems.
+      sprite: 0
+    - name: Morty
+      line: Indeed.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: But if I did whatever you said, we wouldn't be talking like this.
+      sprite: 0
+    - name: Morty
+      line: '...That is true. I suppose I WAS wrong about you, at least...'
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 14000000
+  - lines:
+    - name: Morty
+      line: The end of all suffering... necessary for the good of the world...
+      sprite: 0
+    - name: 
+      line: Morty is mumbling to themself, glancing at you every now and again.
+      sprite: 0
+    type: 0
+    branches:
+    - Lost in thought?
+    - I believe in you, Morty!
+    branchDialogues: 2500000026000000
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Lost in thought?
+      sprite: 0
+    - name: Morty
+      line: What? No, I.... hm. Overthinking leads to more problems, but...
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I believe in you, Morty!
+      sprite: 0
+    - name: Morty
+      line: Hm? Oh, yes. Of course you do.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Morty
+      line: Oh, what a kind, simple gesture.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Morty
+      line: You got this specifically for me? ......Thank you, paladin.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: Morty
+      line: (deep sigh) Nobody ever listens..
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: 
+      line: Morty seems eerily calm today.
+      sprite: 0
+    - name: '|*PLAYER*|'
+      line: So... what's up?
+      sprite: 0
+    - name: Morty
+      line: Oh, nothing much. I've just decided on a solution to all our problems,
+        that's all. In fact, it's right over there.
+      sprite: 0
+    - name: 
+      line: You turn around and look.
+      sprite: 0
+    type: 2
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
   read: 
   faceSprites: []
-  firstKillIndex: 0
-  hateDialogueIndices: 
-  neutralDialogueIndices: 
-  likedDialogueIndices: 
-  giftDialogueIndices: 
+  firstKillIndex: 42
+  hateDialogueIndices: 0f00000012000000
+  neutralDialogueIndices: 150000001a0000001d000000
+  likedDialogueIndices: 2100000024000000
+  giftDialogueIndices: 270000002800000029000000
   relationship: -100
   met: 0
-  deaths: []
+  deaths:
+  - 'As soon as you turn around, you''re immediately hit on the back of the head with
+    a shovel. Admittedly, you kind of walked into that one.
+
+
+    Congratulations: you''re dead.'
   gGiftsReceived: 000000000000000000000000
