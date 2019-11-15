@@ -446,97 +446,141 @@ MonoBehaviour:
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: So... What do you... do for fun?
       sprite: 0
     type: 0
+    branches:
+    - I collect things.
+    - (Lie) Science stuff, same as you.
+    - I dedicate all my time to work.
+    branchDialogues: 220000002300000024000000
+    relationshipChanges: 00000000f6ffffff0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: I collect things.
+      sprite: 0
+    - name: Henry
+      line: What things?
+      sprite: 0
+    type: 0
+    branches:
+    - Swords.
+    - Coins.
+    - Lovers. (wink)
+    branchDialogues: 250000002600000027000000
+    relationshipChanges: 1400000000000000f6ffffff
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Science stuff, same as you.
+      sprite: 0
+    - name: Henry
+      line: Did you just say...
+      sprite: 0
+    - name: Henry
+      line: Did you just say... science stuff??
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Hah! How generic. Though I can't say I don't relate...
+      sprite: 0
+    - name: Henry
+      line: Hey, ya wanna see a dead body?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Swords.
+      sprite: 0
+    - name: Henry
+      line: Well that's... interesting, actually. I suppose you see them as more than
+        just tools for killing then, don't you?
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Coins.
+      sprite: 0
+    - name: Henry
+      line: What.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Lovers. (wink)
+      sprite: 0
+    - name: 
+      line: Henry gives you an utterly confounded look.
+      sprite: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: What are your favorite, uh... bloody ****, I don't know. What's your favorite
+        type of natural disaster?
       sprite: 0
     type: 0
+    branches:
+    - You really aren't used to talking to people, huh?
+    - Monsoons are always pretty to look at.
+    branchDialogues: 290000002a000000
+    relationshipChanges: f6ffffff0a000000
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Wow, you really aren't used to talking to people, huh?
+      sprite: 0
+    - name: Henry
+      line: No, I'm not. I'm actually an antisocial ******** with no interpersonal
+        skills, but thanks for pointing that out. ****.
+      sprite: 0
+    type: 1
+    branches: []
+    branchDialogues: 
+    relationshipChanges: 
+  - lines:
+    - name: '|*PLAYER*|'
+      line: Monsoons are always pretty to look at.
+      sprite: 0
+    - name: Henry
+      line: Hmm, interesting. I never would've thought of "pretty" as a factor.
+      sprite: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
   - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: How would you say is your ideal way to die?
       sprite: 0
     type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
+    branches:
+    - Heroically in battle.
+    - Peacefully in my sleep, I guess?
+    - Are you going to kill me, Henry?
+    branchDialogues: 2c0000002d0000002e000000
+    relationshipChanges: 000000001400000000000000
   - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
+    - name: '|*PLAYER*|'
+      line: Heroically in battle.
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
     - name: Henry
-      line: Hey, ya wanna see a dead body?
+      line: Ugh, I don't know what I expected.
       sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
-    branches: []
-    branchDialogues: 
-    relationshipChanges: 
-  - lines:
-    - name: Henry
-      line: Hey, ya wanna see a dead body?
-      sprite: 0
-    type: 0
+    type: 1
     branches: []
     branchDialogues: 
     relationshipChanges: 
@@ -617,5 +661,6 @@ MonoBehaviour:
   firstKillIndex: 0
   hateDialogueIndices: 0d00000010000000
   neutralDialogueIndices: 140000001a000000
+  likedDialogueIndices: 21000000280000002b000000
   relationship: -100
   met: 0

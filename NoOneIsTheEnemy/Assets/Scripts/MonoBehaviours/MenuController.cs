@@ -13,14 +13,19 @@ public class MenuController : MonoBehaviour
     public GameObject fileButtonPrefab;
     public GameObject inputFieldPrefab;
 
+    public GameObject menuPanel;
     public GameObject loadPanel;
     public GameObject storyPanel;
 
     public InputField nameInput;
 
+    private Button[] menuButtons;
+
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(GameObject.Find("NewGameButton"));
+
+        menuButtons = menuPanel.GetComponentsInChildren<Button>();
     }
 
     private void Update()
@@ -49,6 +54,11 @@ public class MenuController : MonoBehaviour
             return;
         }
         loadPanel.SetActive(true);
+
+        foreach (Button button in menuButtons)
+        {
+            button.interactable = false;
+        }
 
         nameInput = Instantiate(inputFieldPrefab, loadPanel.transform).GetComponent<InputField>();
         for (int i = 0; i < numSaves; i++)
@@ -93,6 +103,11 @@ public class MenuController : MonoBehaviour
             return;
         }
         loadPanel.SetActive(true);
+
+        foreach (Button button in menuButtons)
+        {
+            button.interactable = false;
+        }
 
         int startSelect = 0;
 
@@ -150,16 +165,33 @@ public class MenuController : MonoBehaviour
             }
         }
 
+        foreach (Button button in menuButtons)
+        {
+            button.interactable = true;
+        }
+        EventSystem.current.SetSelectedGameObject(menuButtons[0].gameObject);
+
         loadPanel.SetActive(false);
     }
 
     public void OpenStoryPanel()
     {
+        foreach (Button button in menuButtons)
+        {
+            button.interactable = false;
+        }
+
         storyPanel.SetActive(true);
     }
 
     public void CloseStoryPanel()
     {
+        foreach (Button button in menuButtons)
+        {
+            button.interactable = true;
+        }
+        EventSystem.current.SetSelectedGameObject(menuButtons[0].gameObject);
+
         storyPanel.SetActive(false);
     }
 

@@ -35,6 +35,9 @@ public class Character : ScriptableObject
     [Tooltip("An array of indices of neutral dialogues in the dialogues array")]
     public int[] neutralDialogueIndices;
 
+    [Tooltip("An array of indices of liked dialogues in the dialogues array")]
+    public int[] likedDialogueIndices;
+
     public int relationship;
 
     public bool met;
@@ -66,6 +69,14 @@ public class Character : ScriptableObject
         else if (relationship < -60)
         {
             dIndex = hateDialogueIndices[Random.Range(0, hateDialogueIndices.Length)];
+        }
+        else if (relationship < 10)
+        {
+            dIndex = neutralDialogueIndices[Random.Range(0, neutralDialogueIndices.Length)];
+        }
+        else
+        {
+            dIndex = likedDialogueIndices[Random.Range(0, likedDialogueIndices.Length)];
         }
 
         read[dIndex] = true;
