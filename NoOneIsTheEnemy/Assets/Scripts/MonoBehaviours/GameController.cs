@@ -57,6 +57,12 @@ public class GameController : MonoBehaviour
     private void NewDay()
     {
         day++;
+        if (day >= 8)
+        {
+            LoadScene(endScene);
+            return;
+        }
+
         energy = dailyEnergy;
         MapController[] mapControllers = FindObjectsOfType<MapController>();
         if (mapControllers.Length > 0)
