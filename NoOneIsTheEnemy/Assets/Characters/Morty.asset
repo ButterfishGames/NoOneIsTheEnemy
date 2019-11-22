@@ -121,7 +121,7 @@ MonoBehaviour:
     - '..."paladin"?'
     - Isn't a war more trouble than anything?
     branchDialogues: 0700000008000000
-    relationshipChanges: 
+    relationshipChanges: 0000000000000000
   - lines:
     - name: '|*PLAYER*|'
       line: Are you, um, okay?
@@ -134,7 +134,7 @@ MonoBehaviour:
     - I don't... know how to respond to that.
     - It's just that you look kind of ill.
     branchDialogues: 090000000a000000
-    relationshipChanges: 
+    relationshipChanges: 000000000a000000
   - lines:
     - name: '|*PALADIN*|'
       line: '..."paladin"?'
@@ -160,7 +160,7 @@ MonoBehaviour:
     - That's insane.
     - Why?
     branchDialogues: 0b0000000c000000
-    relationshipChanges: 
+    relationshipChanges: f6ffffff0a000000
   - lines:
     - name: '|*PLAYER*|'
       line: I don't... know how to respond to that.
@@ -173,7 +173,7 @@ MonoBehaviour:
     - Um. Well, I'm here on behalf of--
     - '......'
     branchDialogues: 0d0000000e000000
-    relationshipChanges: 
+    relationshipChanges: 000000000a000000
   - lines:
     - name: '|*PLAYER*|'
       line: It's just that you look kind of ill.
@@ -249,7 +249,7 @@ MonoBehaviour:
     - Wouldn't that be against your beliefs?
     - Please don't.
     branchDialogues: 1000000011000000
-    relationshipChanges: 
+    relationshipChanges: ecffffff14000000
   - lines:
     - name: '|*PLAYER*|'
       line: Wouldn't that be against your beliefs?
@@ -282,7 +282,7 @@ MonoBehaviour:
     - I don't know what else to do.
     - No, I'm just determined!
     branchDialogues: 1300000014000000
-    relationshipChanges: 
+    relationshipChanges: 0a000000ecffffff
   - lines:
     - name: '|*PLAYER*|'
       line: I don't know what else to do.
@@ -299,7 +299,7 @@ MonoBehaviour:
       line: No, I'm just determined!
       sprite: 0
     - name: Morty
-      line: Determined to what? Manipulate me? //Teach// me some valuable lesson that
+      line: Determined to what? Manipulate me? Teach me some valuable lesson that
         you think I'm just not getting? I'm done listening to you.
       sprite: 5
     type: 1
@@ -315,14 +315,14 @@ MonoBehaviour:
     - It's my job to convince you to sign the peace treaty.
     - To keep people from dying in a senseless war?
     branchDialogues: 1600000017000000
-    relationshipChanges: 
+    relationshipChanges: 0a00000000000000
   - lines:
     - name: '|*PLAYER*|'
       line: It's my job to convince you to sign the peace treaty.
       sprite: 0
     - name: Morty
-      line: Oh, of course. They send you because it's your //job// to obey orders,
-        so you can't be blamed. You're an innocent. They could never send one of their
+      line: Oh, of course. They send you because it's your job to obey orders, so
+        you can't be blamed. You're an innocent. They could never send one of their
         own, because then we'd see how corrupt they really are.
       sprite: 5
     type: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
     - You really think so?
     - That's what they all say...
     branchDialogues: 1800000019000000
-    relationshipChanges: 
+    relationshipChanges: 0a000000ecffffff
   - lines:
     - name: '|*PLAYER*|'
       line: You really think so?
@@ -377,7 +377,7 @@ MonoBehaviour:
     - I don't know about that; octopuses are pretty nice.
     - It's like the dumb ones don't even think to be jerks.
     branchDialogues: 1b0000001c000000
-    relationshipChanges: 
+    relationshipChanges: e2ffffff14000000
   - lines:
     - name: '|*PLAYER*|'
       line: I don't know about that; octopuses are pretty nice.
@@ -411,7 +411,7 @@ MonoBehaviour:
     - Is this a trick question?
     - Zombies are cute!
     branchDialogues: 1e0000001f00000020000000
-    relationshipChanges: 
+    relationshipChanges: 00000000ecffffff1e000000
   - lines:
     - name: '|*PLAYER*|'
       line: I'm terrified of it, honestly.
@@ -556,7 +556,7 @@ MonoBehaviour:
     branches: []
     branchDialogues: 
     relationshipChanges: 
-  read: 01000000000100000000000000000000000000000000000000000000000000000000000000000000000000
+  read: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   faceSprites:
   - {fileID: 21300000, guid: 90e86563f1032de44af3d0e800e990a2, type: 3}
   - {fileID: 21300000, guid: 4f768b3a13ae9804aba832e87aa2392e, type: 3}
@@ -573,7 +573,7 @@ MonoBehaviour:
   likedDialogueIndices: 2100000024000000
   giftDialogueIndices: 270000002800000029000000
   relationship: -100
-  met: 1
+  met: 0
   deaths:
   - 'As soon as you turn around, you''re immediately hit on the back of the head with
     a shovel. Admittedly, you kind of walked into that one.
